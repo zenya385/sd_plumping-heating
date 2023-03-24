@@ -81,9 +81,39 @@ main {
   height: 71px;
 }
 
-.hero {
+.sd_b1 {
   height: 580px;
   background-image: url(../src/img/home-hero.jpg);
+}
+.sd_b2 {
+  display: flex;
+  height: 78px;
+  border-bottom: 2px solid #E9E9E9;
+}
+
+.sd_b2__wrap {
+  display: flex;
+  align-items: center;
+}
+.sd_b3 {
+  display: flex;
+  height: 566px;
+}
+.sd_b3__frame {
+  width: 82px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  font-variant: all-small-caps;
+  color: #E3022B;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .footer-nav {
