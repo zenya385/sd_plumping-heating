@@ -1,0 +1,43 @@
+
+//* ===============header-contact======================
+.header-contact {
+  display: flex;
+  height: 53px;
+  background-color: $bg-header;
+
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px;
+}
+.header-contact-list {
+  display: flex;
+  align-items: center;
+}
+.header-contact-item {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.header-contact-link {
+  color: $text-primary;
+}
+
+//* ===============header-navigation======================
+
+.header-nav {
+  display: flex;
+}
+.heaer-logo {
+}
+.header-logo-img {
+}
+.nav-list {
+  display: flex;
+  height: 71px;
+}
+.nav-item {
+}
+.nav-link {
+}
+.header-btn {
+}
