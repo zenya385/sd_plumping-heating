@@ -83,7 +83,7 @@ main {
 
 .hero {
   height: 580px;
-  background-image: url(../img/home-hero.jpg);
+  background-image: url(../src/img/home-hero.jpg);
 }
 
 .footer-nav {
