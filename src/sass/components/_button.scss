@@ -1,0 +1,17 @@
+.button{
+  display: inline-block;
+  background-color: $bg-btn-pimary;
+  color: $text-white;
+
+font-family: 'Raleway';
+font-weight: 600;
+font-size: 18px;
+line-height: 1.16;
+letter-spacing: 0.015em;
+// text-transform: capitalize;
+// width: 185px;
+// height: 49px;
+padding: 14px 42px;
+border-radius: 5px;
+border-top-left-radius: 35px;
+}

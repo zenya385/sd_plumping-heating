@@ -1,27 +1,25 @@
 .sd_b3 {
-  display: flex;
-  height: 566px;
-  &__frame{
+  // display: grid;
+  // height: 566px;
+  &__frame {
     width: 82px;
-height: 21px;
+    height: 21px;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 21px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
 
+    letter-spacing: 0.015em;
+    // font-variant: all-small-caps;
 
-letter-spacing: 0.015em;
-font-variant: all-small-caps;
+    color: #e3022b;
 
-color: #E3022B;
+    /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
   }
 }

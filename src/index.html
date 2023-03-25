@@ -18,28 +18,49 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="header-contact">
       <ul class="header-contact-list">
-        <li class="header-contact-item"><a href="#" class="header-contact-link">Monday – Friday: 08:00 – 17:00 |
+        <li class="header-contact-item"><a href="#" class="header-contact-link">
+            <svg class="header-contact__icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-clock"></use>
+            </svg>
+            Monday – Friday: 08:00 – 17:00 |
             Saturday: 09:00 – 12:00</a></li>
-        <li class="header-contact-item"><a href="#" class="header-contact-link">info@sdplumbingandheating.com</a></li>
-        <li class="header-contact-item"><a href="#" class="header-contact-link">0131 380 6266</a></li>
+        <li class="header-contact-item"><a href="mailto:info@sdplumbingandheating.com" class="header-contact-link">
+            <svg class="header-contact__icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+            info@sdplumbingandheating.com</a></li>
+        <li class="header-contact-item"><a href="tel:01313806266" class="header-contact-link">
+            <svg class="header-contact__icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-call"></use>
+            </svg>
+            0131 380 6266</a></li>
       </ul>
     </div>
     <nav class="header-nav">
       <a href="#" class="heaer-logo"><img src="./img/logo.png" alt="company logo sd plumping & heating"
           class="header-logo-img"></a>
       <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Locations</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Our Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="./index.html" class="nav-link nav-link__current current">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Services &#32; &#709;</a>
+          <!-- <ul>
+          <li><a href="#">Bathroom fitters</a></li>
+          <li><a href="#">Boiler installation</a></li>
+          <li><a href="#">Boiler servicing</a></li>
+          <li><a href="#">Boiler repair</a></li>
+          <li><a href="#">Kitchen fitters</a></li>
+          <li><a href="#">Power flushing</a></li>
+          <li><a href="#">Boiler care</a></li>
+        </ul> -->
+        <li class="nav-item"><a href="#" class="nav-link current current">Locations</a></li>
+        <li class="nav-item"><a href="#" class="nav-link current">Portfolio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link current">Testimonials</a></li>
+        <li class="nav-item"><a href="#" class="nav-link current">Our Blog</a></li>
+        <li class="nav-item"><a href="#" class="nav-link  current">Contact</a></li>
       </ul>
-      <button type="button" class="header-btn">Get a Quote</button>
+      <button type="button" class="button header-btn">Get A Quote</button>
     </nav>
   </header>
   <main>
@@ -53,25 +74,25 @@
 
     <section class="sd_b2">
       <div class="sd_b2__wrap">
-        <svg class="sd_b2__icon" width="27" height="35">
+        <svg class="sd_b2__wrap__icon" width="27" height="35">
           <use href="./img/sprite.svg#icon-hs11"></use>
         </svg>
         <p class="sd_b2__wrap__text">Over 15,000 boilers installed</p>
       </div>
       <div class="sd_b2__wrap">
-        <svg class="sd_b2__icon" width="26" height="26">
+        <svg class="sd_b2__wrap__icon" width="26" height="26">
           <use href="./img/sprite.svg#icon-hs12"></use>
         </svg>
         <p class="sd_b2__wrap__text">Over 15,000 boilers installed</p>
       </div>
       <div class="sd_b2__wrap">
-        <svg class="sd_b2__icon" width="46" height="25">
+        <svg class="sd_b2__wrap__icon" width="46" height="25">
           <use href="./img/sprite.svg#icon-hs13"></use>
         </svg>
         <p class="sd_b2__wrap__text">Over 15,000 boilers installed</p>
       </div>
       <div class="sd_b2__wrap">
-        <svg class="sd_b2__icon" width="25" height="27">
+        <svg class="sd_b2__wrap__icon" width="25" height="27">
           <use href="./img/sprite.svg#icon-hs14"></use>
         </svg>
         <p class="sd_b2__wrap__text">Over 15,000 boilers installed</p>
@@ -89,7 +110,7 @@
 
       </ul>
       <div class="sd_b3__frame">
-        <a href="#">About Us</a>
+        <a href="#">ABOUT US</a>
       </div>
       <div>
         <h2>Welcome to sd Plumbing
@@ -115,8 +136,48 @@
           packages and plumber services.</p>
       </div>
     </section>
-    <section class="sd_b4"></section>
-    <section class="sd_b5"></section>
+    <section class="sd_b4">
+      <div class="sd_b4__frame">
+        <a href="#">OUR SERVICES</a>
+      </div>
+      <h2 class="sd_b4__title">Our Boiler Services</h2>
+      <div>
+        <a href="sd_b4__link">Boiler Servicing</a>
+        <a href="sd_b4__link">Boiler Installation</a>
+        <a href="sd_b4__link">Boiler Repairs</a>
+      </div>
+      <div>
+        <h3>Boiler Servicing</h3>
+        <p class="sd_b4__text"></p>
+        <ul class="sd_b4__list">
+          <li class="sd_b4__item">Test your boiler to make sure it starts properly</li>
+          <li class="sd_b4__item">Check the boiler's connections and piping</li>
+          <li class="sd_b4__item">Check the gas flow rate</li>
+          <li class="sd_b4__item">Check the gas flow rate</li>
+          <li class="sd_b4__item">Check the operating pressure that equates through the boiler and the gas meter</li>
+        </ul>
+        <button type="button" class="button sd_b4__btn">Learn more</button>
+      </div>
+      <img src="img/sd_b4-1.png" width="527" height="402" alt="">
+    </section>
+    <section class="sd_b5">
+      <div class="sd_b4__frame">
+        <a href="#">4 EASY STEPS</a>
+      </div>
+      <h2 class="sd_b5__title">How SD Plumbing & Heating Works</h2>
+      <ul class="sd_b5__list">
+        <li class="sd_b5__card">
+          <svg class="sd_b5__icon" width="49" height="38">
+            <use href="./img/sprite.svg#icon-hs31"></use>
+          </svg>
+          <h4>Send Request</h4>
+          <p>You can apply through the form and we will contact you</p>
+          <div class="sd_b5__request">
+            <button>Get a Quote</button>
+          </div>
+        </li>
+      </ul>
+    </section>
     <section class="sd_b6"></section>
     <section class="sd_b7"></section>
   </main>

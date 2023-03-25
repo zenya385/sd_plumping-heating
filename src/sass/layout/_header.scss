@@ -1,43 +1,102 @@
+.header{
+  display: flex;
+  flex-direction: column;
+}
 
 //* ===============header-contact======================
 .header-contact {
   display: flex;
   height: 53px;
+  padding: 12px 0;
   background-color: $bg-header;
 
-  border-top-left-radius: 20px ;
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+
+  padding-left: 55px;
+  padding-right: 55px;
 }
 .header-contact-list {
   display: flex;
   align-items: center;
 }
 .header-contact-item {
+  display: flex;
+  align-items: center;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+
+  &:not(:last-child) {
+    margin-right: 105px;
+  }
 }
 .header-contact-link {
+  display: flex;
+  align-items: center;
   color: $text-primary;
+}
+.header-contact__icon {
+  margin-right: 13px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+
+
 }
 
 //* ===============header-navigation======================
 
 .header-nav {
   display: flex;
+  padding: 16px 55px 18px 55px;
+  // justify-content: space-between;
+  // flex: 3;
 }
 .heaer-logo {
 }
 .header-logo-img {
 }
 .nav-list {
-  display: flex;
-  height: 71px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+flex: 1;
+// min-width: 780px;
+font-family: 'Raleway';
+font-weight: 600;
+font-size: 18px;
+line-height: 1.16;
+letter-spacing: 0.015em;
+text-transform: capitalize;
+
+
+
 }
 .nav-item {
 }
+.current{
+      position: relative;
+    color: $accent-color;
+}
 .nav-link {
+  color: $text-nav-manu;
+
+ &__current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 4px;
+    background:$accent-color;
+    border-radius: 2px;
+}
 }
 .header-btn {
+  // width: 158px;
+  height: 43px;
+  padding: 10px 26px;
 }
