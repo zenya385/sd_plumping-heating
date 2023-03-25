@@ -62,8 +62,8 @@ main {
           flex: 1;
 }
 
-.button, .sd_b5__request__btn, .sd_b1__btn {
-  display: inline-block;
+.button, .sd_b6__wrap__bg__btn, .sd_b5__request__btn, .sd_b1__btn {
+  display: block;
   background-color: #0F4485;
   color: #fff;
   font-family: "Raleway";
@@ -73,10 +73,11 @@ main {
   text-transform: capitalize;
   padding: 14px 42px;
   border-radius: 5px;
-  border-top-left-radius: 35px;
+  border-top-left-radius: 25px;
+  border: none;
 }
 
-.anchor, .sd_b4__frame, .sd_b3__frame {
+.anchor, .sd_b7__frame, .sd_b5__frame, .sd_b4__frame, .sd_b3__frame {
   display: inline-block;
   padding: 8px 21px;
   font-family: "Montserrat";
@@ -86,8 +87,9 @@ main {
   letter-spacing: 0.015em;
   background: rgba(227, 2, 43, 0.11);
   border-radius: 2px;
+  text-transform: uppercase;
 }
-.anchor a, .sd_b4__frame a, .sd_b3__frame a {
+.anchor a, .sd_b7__frame a, .sd_b5__frame a, .sd_b4__frame a, .sd_b3__frame a {
   color: #E3022B;
 }
 
@@ -219,6 +221,7 @@ main {
           backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .sd_b1__title {
   font-family: "Catamaran";
@@ -392,6 +395,16 @@ main {
   color: #292A24;
 }
 
+.sd_b5__subtitle {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
 .sd_b5__request {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,7 +414,10 @@ main {
           justify-content: end;
   height: 207px;
   padding: 51px 76px 81px;
-  background-image: url(../src/img/Frame-5.png);
+  background-image: url(../src/img/sd_b5-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .sd_b5__request__subtitle {
   margin-bottom: 7px;
@@ -419,7 +435,7 @@ main {
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .sd_b5__request__btn {
   background-color: #fff;
@@ -431,6 +447,9 @@ main {
   margin-left: 77px;
 }
 
+.sd_b6 {
+  padding-top: 64px;
+}
 .sd_b6__title {
   text-align: center;
   font-family: "Catamaran";
@@ -439,11 +458,65 @@ main {
   letter-spacing: 0.015em;
   text-transform: capitalize;
   color: #292A24;
+  margin-bottom: 27px;
 }
 .sd_b6__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sd_b6__wrap__bg {
+  height: 369px;
+  width: 665px;
+  background-image: url(../src/img/sd_b6-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sd_b6__wrap__bg:nth-child(2) {
+  background-image: url(../src/img/sd_b6-2.png);
+}
+.sd_b6__wrap__bg__title {
+  font-family: "Catamaran";
+  font-weight: 600;
+  font-size: 25px;
+  color: #292A24;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 148px;
+}
+.sd_b6__wrap__bg__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.23;
+  color: #585858;
+  text-align: center;
+  margin-bottom: 34px;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+.sd_b6__wrap__bg__btn {
+  margin: 0 auto;
+}
+
+.sd_b7 {
+  height: 536px;
+  background-image: url(../src/img/sd_b7-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sd_b7__frame a {
+  color: #fff;
+}
+.sd_b7__cart {
+  background-color: #103868;
+  width: 580px;
+  height: 235px;
 }
 .footer-nav {
   height: 360px;

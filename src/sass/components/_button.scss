@@ -1,15 +1,16 @@
-.button{
-  display: inline-block;
+.button {
+  display: block;
   background-color: $bg-btn-pimary;
   color: $text-white;
 
-font-family: 'Raleway';
-font-weight: 600;
-font-size: 18px;
-letter-spacing: 0.015em;
-text-transform: capitalize;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
 
-padding: 14px 42px;
-border-radius: 5px;
-border-top-left-radius: 35px;
+  padding: 14px 42px;
+  border-radius: 5px;
+  border-top-left-radius: 25px;
+  border: none;
 }

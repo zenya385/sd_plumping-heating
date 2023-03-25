@@ -1,0 +1,32 @@
+.sd_b7 {
+  height: 536px;
+  background-image: url(../src/img/sd_b7-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__frame {
+    @extend .anchor;
+
+    & a {
+      color: $text-white;
+    }
+  }
+  &__title {
+  }
+  &__text {
+  }
+  &__cart {
+  }
+  &__cart {
+    background-color: #103868;
+    width: 580px;
+    height: 235px;
+    &__name {
+    }
+  }
+  &__cart {
+    &__date {
+    }
+  }
+}
