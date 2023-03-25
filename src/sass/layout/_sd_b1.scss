@@ -2,11 +2,15 @@
   height: 580px;
   padding-top: 164px;
   padding-left: 55px;
-  background-image: linear-gradient(180deg,rgba(53, 53, 53, 0.228) 0%,rgba(0, 0, 0, 0.4731) 86.98%),
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
     url(../src/img/home-hero.jpg);
- backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px);     //! Note: backdrop-filter has minimal browser support
+  backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px); //! Note: backdrop-filter has minimal browser support
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   &__title {
     font-family: "Catamaran";

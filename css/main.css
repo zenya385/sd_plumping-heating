@@ -164,7 +164,7 @@ main {
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/home-hero.jpg);
   backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .sd_b1__title {
   font-family: "Catamaran";
@@ -210,6 +210,17 @@ main {
   color: #acacac;
 }
 
+.sd_b3__img-list {
+  display: grid;
+  margin-left: 100px;
+  border: 1px solid red;
+  grid-template-columns: 251px 251px;
+  grid-template-rows: 251px 294px;
+  column-gap: 31px;
+}
+.sd_b3__img-list:nth-child(2) {
+  margin-top: 47px;
+}
 .sd_b3__frame {
   width: 82px;
   height: 21px;
@@ -219,7 +230,7 @@ main {
   font-size: 17px;
   line-height: 21px;
   letter-spacing: 0.015em;
-  color: #e3022b;
+  color: #E3022B;
   /* Inside auto layout */
 }
 

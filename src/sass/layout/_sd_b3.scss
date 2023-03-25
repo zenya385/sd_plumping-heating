@@ -1,6 +1,31 @@
 .sd_b3 {
   // display: grid;
   // height: 566px;
+
+  
+  &__img-list{
+    // height: 553px;
+    display: grid;
+ margin-left: 100px;
+ border: 1px solid red;
+
+    grid-template-columns:  251px 251px;
+    grid-template-rows: 251px 294px;
+    column-gap: 31px;
+    // row-gap: 34px;
+
+    &:nth-child(2){
+     margin-top: 47px;
+  // justify-self: end;
+// justify-self: stretch;
+    }
+
+//     &:nth-child(3){
+// margin-left: 26px;
+//     }
+
+  }
+
   &__frame {
     width: 82px;
     height: 21px;
@@ -14,7 +39,7 @@
     letter-spacing: 0.015em;
     // font-variant: all-small-caps;
 
-    color: #e3022b;
+    color:$accent-color;
 
     /* Inside auto layout */
 
