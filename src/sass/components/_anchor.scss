@@ -1,10 +1,18 @@
-.anchor{
+.anchor {
+  display: inline-block;
 
-display: block;
-flex-direction: row;
-align-items: flex-start;
-padding: 8px 21px;
+  padding: 8px 21px;
 
-background: $bg-frame-primary;
-border-radius: 2px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.23;
+
+  letter-spacing: 0.015em;
+  background: $bg-frame-primary;
+  border-radius: 2px;
+
+  & a {
+    color: $accent-color;
+  }
 }

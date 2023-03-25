@@ -1,0 +1,26 @@
+.sd_b6 {
+  &__title {
+    text-align: center;
+    
+    font-family: "Catamaran";
+    font-weight: 600;
+    font-size: 33px;
+    // line-height: 1.4;
+    letter-spacing: 0.015em;
+    text-transform: capitalize;
+    color: $text-title;
+}
+&__wrap {
+  display: flex;
+}
+&__wrap__bg {
+}
+&__wrap__bg__title {
+}
+&__text {
+}
+&__wrap__bg__btn {
+}
+
+}
+

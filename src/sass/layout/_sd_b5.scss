@@ -1,0 +1,62 @@
+.sd_b5 {
+  padding-top: 100px;
+  padding-bottom: 64px;
+}
+.sd_b5__frame {
+}
+
+.sd_b5__title {
+    text-align: center;
+
+    font-family: 'Catamaran';
+font-weight: 600;
+font-size: 33px;
+line-height: 1.4;
+letter-spacing: 0.015em;
+
+color: $text-title;
+}
+.sd_b5__list {
+}
+.sd_b5__card {
+}
+.sd_b5__icon {
+}
+.sd_b5__request {
+  display: flex;
+  justify-content: end;
+  height: 207px;
+  padding: 51px 76px 81px;
+  background-image: url(../src/img/Frame-5.png);
+  &__subtitle {
+    margin-bottom: 7px;
+    text-align: start;
+
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 51px;
+    color: $text-white;
+  }
+  &__text {
+    font-family: 'Montserrat';
+font-weight: 400;
+font-size: 18px;
+line-height: 1.22;
+text-align: center;
+
+color: #FFFFFF;
+  }
+  &__btn {
+    @extend .button;
+    background-color: $text-white;
+    color: $bg-btn-pimary;
+    height: 45px;
+    border-top-left-radius: 20px;
+    padding: 11px 31px 12px 32px;
+    margin-top: 30px;
+    margin-left: 77px;
+    // border: none;
+  }
+}
