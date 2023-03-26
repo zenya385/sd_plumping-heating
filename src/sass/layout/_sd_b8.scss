@@ -1,0 +1,48 @@
+.sd_b8 {
+  padding-top: 64px;
+  padding-left: 55px;
+  padding-bottom: 64px;
+  padding-right: 55px;
+  &__frame {
+    @extend .anchor;
+
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    @extend .font-title;
+    margin-bottom: 14px;
+    text-align: start;
+  }
+  &__text {
+    @extend .font-text;
+    margin-bottom: 41px;
+  }
+  &__card {
+    display: flex;
+
+    &__item {
+      height: 238px;
+      width: 427px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 auto;
+      background-color: #f0f0f0;
+      &__icon {
+        display: block;
+        margin: 0 auto;
+      }
+      &__subtitle {
+        @extend .font-title;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.64;
+      }
+      &__text {
+        @extend .font-text;
+      }
+    }
+  }
+}

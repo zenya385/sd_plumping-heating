@@ -1,0 +1,22 @@
+.sd_b9{
+height: 550px;
+padding-top: 64px;
+padding-right: 55px;
+padding-left: 55px;
+padding-bottom: 64px;
+
+
+  
+  &__wrap{
+    height: 533px;
+    display: flex;
+  }
+  
+&__img-list{
+  @extend .sd_b3__img-list;
+    // height: 533px;
+
+    // display: flex;
+  }
+    
+}

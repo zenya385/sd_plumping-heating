@@ -7,15 +7,7 @@
 }
 
 .sd_b5__title {
-  text-align: center;
-
-  font-family: "Catamaran";
-  font-weight: 600;
-  font-size: 33px;
-  line-height: 1.4;
-  letter-spacing: 0.015em;
-
-  color: $text-title;
+  @extend .font-title;
 }
 .sd_b5__subtitle {
   font-family: "Catamaran";

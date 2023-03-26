@@ -1,4 +1,6 @@
 .sd_b7 {
+  margin-top: 64px;
+  margin-bottom: 64px;
   height: 536px;
   background-image: url(../src/img/sd_b7-1.png);
   background-repeat: no-repeat;
@@ -7,14 +9,23 @@
 
   &__frame {
     @extend .anchor;
-
+    margin-top: 34px;
+    margin-bottom: 14px;
     & a {
       color: $text-white;
     }
   }
   &__title {
+    @extend .font-title;
+    margin-bottom: 14px;
+
+    text-transform: capitalize;
+    color: $text-white;
   }
   &__text {
+    @extend .font-text;
+    margin-bottom: 64px;
+    color: $text-white;
   }
   &__cart {
   }
