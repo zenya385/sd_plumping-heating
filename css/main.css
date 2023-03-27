@@ -62,7 +62,7 @@ main {
           flex: 1;
 }
 
-.font-title, .sd_b8__card__item__subtitle, .sd_b8__title, .sd_b7__title, .sd_b6__wrap__bg__subtitle, .sd_b6__title, .sd_b5__title {
+.font-title, .sd_b9__title, .sd_b8__card__item__subtitle, .sd_b8__title, .sd_b7__title, .sd_b6__wrap__bg__subtitle, .sd_b6__title, .sd_b5__title {
   font-family: "Catamaran";
   font-weight: 600;
   font-size: 33px;
@@ -97,8 +97,9 @@ main {
   border: none;
 }
 
-.anchor, .sd_b8__frame, .sd_b7__frame, .sd_b5__frame, .sd_b4__frame, .sd_b3__frame {
+.anchor, .sd_b9__frame, .sd_b8__frame, .sd_b7__frame, .sd_b5__frame, .sd_b4__frame, .sd_b3__frame {
   display: inline-block;
+  margin-bottom: 14px;
   padding: 8px 21px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -109,7 +110,7 @@ main {
   border-radius: 2px;
   text-transform: uppercase;
 }
-.anchor a, .sd_b8__frame a, .sd_b7__frame a, .sd_b5__frame a, .sd_b4__frame a, .sd_b3__frame a {
+.anchor a, .sd_b9__frame a, .sd_b8__frame a, .sd_b7__frame a, .sd_b5__frame a, .sd_b4__frame a, .sd_b3__frame a {
   color: #E3022B;
 }
 
@@ -321,9 +322,6 @@ main {
 .sd_b3__wrap {
   margin-left: 97px;
 }
-.sd_b3__frame {
-  margin-bottom: 14px;
-}
 .sd_b3__title {
   max-width: 447px;
   margin-bottom: 14px;
@@ -348,9 +346,6 @@ main {
 
 .sd_b4 {
   padding: 100px 104px 98px 126px;
-}
-.sd_b4__frame {
-  margin-bottom: 14px;
   text-align: center;
 }
 .sd_b4__title {
@@ -403,6 +398,7 @@ main {
 .sd_b5 {
   padding-top: 100px;
   padding-bottom: 64px;
+  text-align: center;
 }
 
 .sd_b5__subtitle {
@@ -507,10 +503,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 .sd_b7__frame {
   margin-top: 34px;
-  margin-bottom: 14px;
 }
 .sd_b7__frame a {
   color: #fff;
@@ -534,9 +530,6 @@ main {
   padding-left: 55px;
   padding-bottom: 64px;
   padding-right: 55px;
-}
-.sd_b8__frame {
-  margin-bottom: 14px;
 }
 .sd_b8__title {
   margin-bottom: 14px;
@@ -566,15 +559,21 @@ main {
   text-align: center;
   margin: 0 auto;
   background-color: #f0f0f0;
+  padding-top: 29px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .sd_b8__card__item__icon {
   display: block;
   margin: 0 auto;
+  margin-bottom: 14px;
 }
 .sd_b8__card__item__subtitle {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.64;
+  margin-bottom: 7px;
 }
 .sd_b9 {
   height: 720px;
@@ -582,6 +581,13 @@ main {
   padding-right: 55px;
   padding-left: 55px;
   padding-bottom: 64px;
+  text-align: center;
+}
+.sd_b9__frame {
+  text-align: center;
+}
+.sd_b9__title {
+  margin-bottom: 14px;
 }
 .sd_b9__wrap {
   height: 533px;
@@ -589,6 +595,10 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
+.sd_b9 summary {
+  width: 797px;
+}
+
 .footer-nav {
   height: 360px;
   background-color: #212121;

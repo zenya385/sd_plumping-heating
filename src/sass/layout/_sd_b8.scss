@@ -3,10 +3,10 @@
   padding-left: 55px;
   padding-bottom: 64px;
   padding-right: 55px;
+
+
   &__frame {
     @extend .anchor;
-
-    margin-bottom: 14px;
   }
 
   &__title {
@@ -30,15 +30,23 @@
       text-align: center;
       margin: 0 auto;
       background-color: #f0f0f0;
+padding-top: 29px;
+padding-bottom: 41px;
+padding-left: 20px;
+padding-right: 20px;
+
+
       &__icon {
         display: block;
         margin: 0 auto;
+        margin-bottom: 14px;
       }
       &__subtitle {
         @extend .font-title;
         font-weight: 500;
         font-size: 25px;
         line-height: 1.64;
+        margin-bottom: 7px;
       }
       &__text {
         @extend .font-text;

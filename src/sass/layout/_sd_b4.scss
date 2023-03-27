@@ -1,11 +1,9 @@
 .sd_b4 {
   padding: 100px 104px 98px 126px;
+  text-align: center;
 
   &__frame {
     @extend .anchor;
-
-    margin-bottom: 14px;
-    text-align: center;
   }
   &__title {
     margin-bottom: 36px;

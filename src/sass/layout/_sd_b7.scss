@@ -6,11 +6,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 
   &__frame {
     @extend .anchor;
     margin-top: 34px;
-    margin-bottom: 14px;
     & a {
       color: $text-white;
     }
