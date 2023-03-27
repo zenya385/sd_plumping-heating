@@ -4,14 +4,14 @@
   padding-right: 55px;
   padding-left: 55px;
   padding-bottom: 64px;
-  text-align: center;
+  // text-align: center;
 
   &__frame {
     @extend .anchor;
 
     // min-width: 150px;
     // margin: 0 auto;
-    text-align: center;
+    // text-align: center;
   }
   &__title {
     @extend .font-title;
@@ -31,5 +31,5 @@
 // ===================================
 
 .sd_b9 summary {
-  width: 797px; //test
+  width: 200px; //test
 }
