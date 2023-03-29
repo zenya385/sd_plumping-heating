@@ -73,7 +73,7 @@ main {
   color: #292a24;
 }
 
-.font-text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .sd_b7__text, .sd_b6__wrap__bg__text {
+.font-text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .sd_b7__text, .sd_b6__wrap__bg__text, .sd_b4__text, .sd_b4__list {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 17px;
@@ -109,7 +109,7 @@ main {
   border-radius: 41px;
 }
 
-.button, .sd_b12__wrap__form button, .sd_b6__wrap__bg__btn, .sd_b5__request__btn, .sd_b1__btn {
+.button, .sd_b12__wrap__form button, .sd_b6__wrap__bg__btn, .sd_b5__request__btn, .sd_b4__btn, .sd_b1__btn {
   display: block;
   background-color: #0f4485;
   color: #fff;
@@ -232,6 +232,118 @@ main {
   line-height: 1.16;
   letter-spacing: 0.015em;
   text-transform: capitalize;
+}
+
+.nav-menu {
+  width: 13%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nav-menu.menu {
+  display: grid;
+  grid-template-rows: 40px -webkit-max-content;
+  grid-template-rows: 40px max-content;
+  gap: 10px;
+}
+
+.toggle {
+  all: unset;
+  background-color: transparent;
+  color: #666666;
+  width: 95px;
+  padding: 10px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  top: 36%;
+  left: 85%;
+}
+
+.list {
+  background-color: #f7f7f7;
+  color: #444;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(7, 30px);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 10;
+  position: absolute;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+  -webkit-transition: 0.4s, -webkit-transform 0.4s var(--delay);
+  transition: 0.4s, -webkit-transform 0.4s var(--delay);
+  transition: 0.4s, transform 0.4s var(--delay);
+  transition: 0.4s, transform 0.4s var(--delay), -webkit-transform 0.4s var(--delay);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: rgba(113, 114, 116, 0.144);
+  color: #fff;
+}
+
+.toggle:focus::after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.toggle:focus ~ .list {
+  height: 210px;
+}
+
+.toggle:focus ~ .list .list-item {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .current, .sd_b4__wrap__link {
@@ -402,10 +514,10 @@ main {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  bottom: -20px;
-  width: 100%;
-  height: 8px;
+  left: -1px;
+  bottom: -21px;
+  width: 101%;
+  height: 10px;
   background: #eeeeee;
   border-radius: 41px;
 }
@@ -413,15 +525,23 @@ main {
   color: #292a24;
 }
 .sd_b4__subtitle {
+  margin-bottom: 14px;
   font-family: "Catamaran";
   font-weight: 600;
   font-size: 25px;
   line-height: 1.4;
   letter-spacing: 0.015em;
+  text-align: left;
   color: #292a24;
 }
-.sd_b4__list__btn {
-  background-color: #0f4485;
+.sd_b4__text, .sd_b4__list {
+  text-align: left;
+}
+.sd_b4__text:not(:last-child), .sd_b4__list:not(:last-child) {
+  margin-bottom: 20px;
+}
+.sd_b4__list__item {
+  margin-bottom: 34px;
 }
 .sd_b4 img {
   display: block;
@@ -430,6 +550,23 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.sd_b4__item {
+  margin-bottom: 13px;
+}
+
+.sd_b4__item::before {
+  content: url("../src/img/angle.svg");
+  display: inline-block;
+  width: 17px;
+  height: 15px;
+  margin-right: 14px;
+}
+
+.sd_b4__btn {
+  margin-top: 37px;
+  background-color: #0f4485;
 }
 
 .sd_b5 {
