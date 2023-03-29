@@ -20,10 +20,53 @@
   color: #000000;
 }
 .sd_b5__list {
+  display: flex;
+
 }
 .sd_b5__card {
+width: 152px;
+height: 257px;
 }
 .sd_b5__icon {
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 19px;
+  color: #ffffff;
+margin: 0 auto;
+  &::after{
+    content: "";
+//     width: 100%;
+
+//     background: #EEEEEE;
+// border-radius: 41px;
+    // content: "";
+    // display: block;
+    // position: absolute;
+    // left: -1px;
+    // bottom: -21px;
+    // width: 151%;
+    // height: 10px;
+    // background: #eee;
+    // border-radius: 41px;
+  }
+  &__letter {
+}
+}
+.border{
+  border: 12px solid #EEE;
+}
+.sd_b5__subtitle {
 }
 .sd_b5__request {
   display: flex;

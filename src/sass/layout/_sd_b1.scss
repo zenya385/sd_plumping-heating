@@ -1,4 +1,5 @@
-.sd_b1 {
+.slider__item {
+  position: relative;
   height: 580px;
   padding-top: 164px;
   padding-left: 55px;
@@ -8,10 +9,43 @@
       rgba(0, 0, 0, 0.4731) 86.98%
     ),
     url(../src/img/home-hero.jpg);
-  backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px); 
+  backdrop-filter: url(../src/img/home-hero.jpg) blur(1.5px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  &:nth-child(3){
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
+    url(../src/img/hero1.jpg);
+  }
+  &:nth-child(4){
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
+    url(../src/img/hero2.jpg);
+  }
+  &:nth-child(5){
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
+    url(../src/img/hero3.jpg);
+  }
+  &:nth-child(6){
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
+    url(../src/img/hero4.jpg);
+  }
+
   &__title {
     font-family: "Catamaran";
     font-weight: 700;
@@ -36,4 +70,84 @@
     @extend .button;
     padding: 14px 38px;
   }
+}
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 55px;
+}
+.slick-dots li {
+  list-style: none;
+  margin-top: -46px;
+    z-index: 10;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+  width: 46px;
+  height: 9px;
+  border: 1px solid #fff;
+  background: #fff;
+
+}
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 9px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: transparent;
+  margin: 0 6px;
 }
