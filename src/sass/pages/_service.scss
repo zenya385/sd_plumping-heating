@@ -1,0 +1,58 @@
+// @use "layout/sd_b2";
+// @use "sd_b1/sd_b1";
+
+.service1 {
+  @extend .slider__item;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    ),
+    url(../src/img/hero1.jpg);
+
+  &__item {
+    &__title {
+      @extend .slider__item__title;
+    }
+    &__text {
+      @extend .slider__item__text;
+    }
+    &__btn {
+      @extend .slider__item__btn;
+    }
+  }
+}
+.service2 {
+  @extend .sd_b2;
+  &__wrap {
+    @extend .sd_b2__wrap;
+    &__icon {
+      @extend .sd_b2__wrap__icon;
+    }
+    &__text {
+      @extend .sd_b2__wrap__text;
+    }
+  }
+}
+.service3{
+  @extend .sd_b8;
+
+}
+
+.service3 {
+}
+// &__frame {
+// }
+// &__title {
+// }
+// &__card {
+// }
+// &__card__item {
+// }
+// &__card__item__icon {
+// }
+// &__card__item__subtitle {
+// }
+// &__card__item__text {
+// }

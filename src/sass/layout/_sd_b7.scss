@@ -2,7 +2,7 @@
   margin-top: 64px;
   margin-bottom: 64px;
   height: 536px;
-  background-image: url(../src/img/sd_b7-1.png);
+  background-image: url(../src/img/sd_b7-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,17 +27,104 @@
     margin-bottom: 64px;
     color: $text-white;
   }
-  &__cart {
-  }
-  &__cart {
+}
+
+.slider-b7 {
+  // @extend .slider;
+  &__item {
     background-color: #103868;
+    background-image: none;
     width: 580px;
     height: 235px;
-    &__name {
-    }
-  }
-  &__cart {
+    margin-right: 22px;
+    overflow: scroll;
     &__date {
     }
   }
+}
+// &__name {
+// }
+
+/* Слайдер */
+.slider-b7 {
+  padding-left: 112px;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slider-b7__cart .slick-list {
+  // overflow: hidden;
+}
+/* Лента слайдов */
+.slider-b7__cart .slick-track {
+  // display: flex;
+}
+/* Слайд */
+.slider-b7 .slick-slide {
+  overflow-y: scroll;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+  overflow: scroll;
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+  overflow: scroll;
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slider-b7 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+/* Стрелка влево */
+.slider-b7 .slick-arrow.slick-prev {
+  left: 0;
+}
+/* Стрелка вправо */
+.slider-b7-cart .slick-arrow.slick-next {
+  right: 0;
+}
+/* Стрелка не активная */
+.slick-arrow .slick-disabled {
+}
+/* Точки (булиты) */
+.slider-b7 .slick-dots {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+.slider-b7 .slick-dots li {
+  list-style: none;
+  margin-top: 20px;
+  z-index: 10;
+}
+/* Активная точка */
+.slider-b7 .slick-dots li.slick-active button {
+  width: 46px;
+  height: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  background-color: rgba(255, 255, 255, 0.68);
+}
+/* Элемент точки */
+.slider-b7 .slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 9px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: transparent;
+  margin: 0 6px;
+  // margin-left: 70px;
 }

@@ -8,6 +8,12 @@
     padding-top: 61px;
     padding-bottom: 34px;
     background-color: $bg-footer-primary;
+    & a {
+      display: flex;
+      & img {
+        align-self: end;
+      }
+    }
   }
   &__rights {
     height: 49px;
@@ -16,7 +22,7 @@
     background-color: $bg-footer-secondary;
   }
 }
-.navLogoBox {
+.logoBox {
   & pre {
     @extend .font-link;
     font-size: 16px;
@@ -30,7 +36,7 @@
     &__icon {
       background-color: $text-white;
       border-radius: 8px;
-      padding: 6px 6px 2px 6px;
+      padding: 6px 6px 6px 6px;
       margin-left: 12px;
     }
   }

@@ -84,7 +84,7 @@ main {
   color: #292a24;
 }
 
-.font-link, .wrapContact__title, .wrapSitemap, .wrapServices, .navLogoBox pre {
+.font-link, .wrapContact__title, .wrapSitemap, .wrapServices, .logoBox pre {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 19px;
@@ -94,23 +94,23 @@ main {
   color: #A5A5A5;
 }
 
-.current, .sd_b4__wrap__link {
+.current-menu-item {
   position: relative;
   color: #292a24;
 }
-.current::after, .sd_b4__wrap__link::after {
+.current-menu-item::after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  bottom: -20px;
+  bottom: -34px;
   width: 100%;
   height: 8px;
   background: #e3022b;
   border-radius: 41px;
 }
 
-.button, .sd_b12__wrap__form button, .sd_b6__wrap__bg__btn, .sd_b5__request__btn, .sd_b4__btn, .slider__item__btn {
+.button, .sd_b12__wrap__form button, .sd_b6__wrap__bg__btn, .sd_b5__request__btn, .sd_b4__btn, .slider__item__btn, .service1__item__btn {
   display: block;
   background-color: #0f4485;
   color: #fff;
@@ -377,7 +377,7 @@ main {
   padding: 10px 26px;
 }
 
-.slider__item {
+.slider__item, .service1 {
   position: relative;
   height: 580px;
   padding-top: 164px;
@@ -390,23 +390,23 @@ main {
   background-size: cover;
   background-position: center;
 }
-.slider__item:nth-child(3) {
+.slider__item:nth-child(3), .service1:nth-child(3) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero1.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero1.jpg);
 }
-.slider__item:nth-child(4) {
+.slider__item:nth-child(4), .service1:nth-child(4) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero2.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero2.jpg);
 }
-.slider__item:nth-child(5) {
+.slider__item:nth-child(5), .service1:nth-child(5) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero3.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero3.jpg);
 }
-.slider__item:nth-child(6) {
+.slider__item:nth-child(6), .service1:nth-child(6) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero4.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero4.jpg);
 }
-.slider__item__title {
+.slider__item__title, .service1__item__title {
   font-family: "Catamaran";
   font-weight: 700;
   font-size: 52px;
@@ -415,7 +415,7 @@ main {
   text-transform: capitalize;
   color: #fff;
 }
-.slider__item__text {
+.slider__item__text, .service1__item__text {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 17px;
@@ -424,7 +424,7 @@ main {
   max-width: 679px;
   margin-bottom: 36px;
 }
-.slider__item__btn {
+.slider__item__btn, .service1__item__btn {
   padding: 14px 38px;
 }
 
@@ -505,7 +505,7 @@ main {
   margin: 0 6px;
 }
 
-.sd_b2 {
+.sd_b2, .service2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +516,7 @@ main {
   border-bottom: 2px solid #e9e9e9;
   padding: 0 65px;
 }
-.sd_b2__wrap {
+.sd_b2__wrap, .service2__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,10 +524,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.sd_b2__wrap__icon {
+.sd_b2__wrap__icon, .service2__wrap__icon {
   margin-right: 11px;
 }
-.sd_b2__wrap__text {
+.sd_b2__wrap__text, .service2__wrap__text {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 17px;
@@ -814,7 +814,7 @@ main {
   margin-top: 64px;
   margin-bottom: 64px;
   height: 536px;
-  background-image: url(../src/img/sd_b7-1.png);
+  background-image: url(../src/img/sd_b7-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -835,16 +835,104 @@ main {
   margin-bottom: 64px;
   color: #fff;
 }
-.sd_b7__cart {
+
+.slider-b7__item {
   background-color: #103868;
+  background-image: none;
   width: 580px;
   height: 235px;
+  margin-right: 22px;
+  overflow: scroll;
 }
-.sd_b8 {
+/* Слайдер */
+.slider-b7 {
+  padding-left: 112px;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* Лента слайдов */
+/* Слайд */
+.slider-b7 .slick-slide {
+  overflow-y: scroll;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+  overflow: scroll;
+}
+
+/* Слайд основной */
+.slick-slide.slick-current {
+  overflow: scroll;
+}
+
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slider-b7 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+/* Стрелка влево */
+.slider-b7 .slick-arrow.slick-prev {
+  left: 0;
+}
+
+/* Стрелка вправо */
+.slider-b7-cart .slick-arrow.slick-next {
+  right: 0;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slider-b7 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.slider-b7 .slick-dots li {
+  list-style: none;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+/* Активная точка */
+.slider-b7 .slick-dots li.slick-active button {
+  width: 46px;
+  height: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  background-color: rgba(255, 255, 255, 0.68);
+}
+
+/* Элемент точки */
+.slider-b7 .slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 9px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: transparent;
+  margin: 0 6px;
+}
+
+.sd_b8, .service3 {
   padding-top: 64px;
   padding-left: 55px;
   padding-bottom: 64px;
   padding-right: 55px;
+  text-align: center;
 }
 .sd_b8__title {
   margin-bottom: 14px;
@@ -906,8 +994,52 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
-.sd_b9 summary {
-  width: 200px;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xpandable-block {
+  height: 55px;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.xpand-button {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .xpandable-block {
+  height: auto;
+}
+
+label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  color: blue;
+  text-decoration: underline;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .sd_b10 {
@@ -1120,7 +1252,7 @@ main {
   margin-right: 18px;
 }
 
-.sd_b12__social__list, .navLogoBox__list {
+.sd_b12__social__list, .logoBox__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,6 +1278,15 @@ main {
   padding-bottom: 34px;
   background-color: #212121;
 }
+.footer__nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__nav a img {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
 .footer__rights {
   height: 49px;
   border-bottom-left-radius: 20px;
@@ -1153,17 +1294,17 @@ main {
   background-color: #d9d9d9;
 }
 
-.navLogoBox pre {
+.logoBox pre {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   text-align: left;
   margin-left: -10px;
 }
-.navLogoBox__list__icon {
+.logoBox__list__icon {
   background-color: #fff;
   border-radius: 8px;
-  padding: 6px 6px 2px 6px;
+  padding: 6px 6px 6px 6px;
   margin-left: 12px;
 }
 
@@ -1241,111 +1382,7 @@ main {
   justify-self: center;
 }
 
-.footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 360px;
-  padding-right: 55px;
-  padding-left: 55px;
-  padding-top: 61px;
-  padding-bottom: 34px;
-  background-color: #212121;
-}
-.footer__rights {
-  height: 49px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #d9d9d9;
-}
-
-.navLogoBox pre {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  text-align: left;
-  margin-left: -10px;
-}
-.navLogoBox__list__icon {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 6px 6px 2px 6px;
-  margin-left: 12px;
-}
-
-.wrapSitemap__title {
-  color: #A5A5A5;
-  margin-bottom: 15px;
-}
-.wrapSitemap__list__item {
-  margin-bottom: 8px;
-}
-.wrapSitemap__list__item a {
-  color: #fefefe;
-}
-
-.wrapServices__title {
-  margin-bottom: 15px;
-}
-.wrapServices__list__item {
-  margin-bottom: 8px;
-}
-.wrapServices__list__item a {
-  color: #fefefe;
-}
-
-.wrapContact__title {
-  margin-bottom: 15px;
-}
-.wrapContact__list__item:not(:last-child) {
-  margin-bottom: 22px;
-}
-.wrapContact__list__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #f7f7f7;
-}
-.wrapContact__list__item a svg {
-  margin-right: 18px;
-  border-radius: 8px;
-  padding: 5px;
-  background-color: #fff;
-}
-
-.footer__rights {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  padding-left: 35px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.015em;
-  color: #8a8a8a;
-}
-.footer__rights__text1 {
-  margin-right: 185px;
-}
-.footer__rights__text2 {
-  justify-self: center;
+.service1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero1.jpg);
+  background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero1.jpg);
 }/*# sourceMappingURL=main.css.map */
