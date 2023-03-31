@@ -318,6 +318,7 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  padding: 0 29px;
   -webkit-transition: 0.4s, -webkit-transform 0.4s var(--delay);
   transition: 0.4s, -webkit-transform 0.4s var(--delay);
   transition: 0.4s, transform 0.4s var(--delay);
