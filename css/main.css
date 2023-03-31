@@ -64,7 +64,7 @@ main {
           flex: 1;
 }
 
-.font-title, .sd_b12__wrap__info__title, .sd_b11__title, .sd_b10__title, .sd_b9__title, .sd_b8__card__item__subtitle, .sd_b8__title, .sd_b7__title, .sd_b6__wrap__bg__subtitle, .sd_b6__title, .sd_b5__title, .sd_b4__title {
+.font-title, .service5__text, .sd_b12__wrap__info__title, .sd_b11__title, .sd_b10__title, .sd_b9__title, .sd_b8__card__item__subtitle, .sd_b8__title, .sd_b7__title, .sd_b6__wrap__bg__subtitle, .sd_b6__title, .sd_b5__title, .sd_b4__title {
   font-family: "Catamaran";
   font-weight: 600;
   font-size: 33px;
@@ -74,7 +74,7 @@ main {
   color: #292a24;
 }
 
-.font-text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .sd_b7__text, .sd_b6__wrap__bg__text, .sd_b4__text, .sd_b4__list {
+.font-text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .slider-b7__item__text, .sd_b7__text, .sd_b6__wrap__bg__text, .sd_b4__text, .sd_b4__list {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 17px;
@@ -283,20 +283,29 @@ main {
 }
 .header .list {
   position: absolute;
-  background-color: rgba(247, 247, 247, 0.6117647059);
+  background: #ffffff;
+  -webkit-box-shadow: 0px 24px 32px 4px rgba(167, 174, 186, 0.12);
+          box-shadow: 0px 24px 32px 4px rgba(167, 174, 186, 0.12);
+  border-radius: 4px;
   color: #444;
   list-style: none;
   display: grid;
-  grid-template-rows: repeat(7, 25px);
-  border-radius: 5px;
+  grid-template-rows: repeat(7, 48px);
   overflow: hidden;
   height: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  margin-top: 20px;
+  margin-top: 43px;
   z-index: 10;
+  width: 311px;
+  left: 313px;
 }
 .header .list a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   color: #292a24;
 }
 .header .list-item {
@@ -306,7 +315,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0 29px;
   -webkit-transition: 0.4s, -webkit-transform 0.4s var(--delay);
   transition: 0.4s, -webkit-transform 0.4s var(--delay);
   transition: 0.4s, transform 0.4s var(--delay);
@@ -320,23 +332,21 @@ main {
   cursor: pointer;
 }
 .header .list-item:hover {
-  background-color: rgba(113, 114, 116, 0.144);
-  color: #fff;
+  background-color: rgba(15, 68, 133, 0.13);
+}
+.header .list-item:hover a {
+  color: #0F4485;
 }
 .header .toggle:focus::after {
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
 .header .toggle:focus ~ .list {
-  height: 180px;
+  height: 337px;
 }
 .header .toggle:focus ~ .list .list-item {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-.header .current, .header .sd_b4__wrap__link {
-  position: relative;
-  color: #e3022b;
 }
 .header .nav-link {
   color: #666666;
@@ -821,9 +831,63 @@ main {
   background-image: none;
   width: 580px;
   height: 235px;
+  padding: 24px 26px 28px 31px;
   margin-right: 22px;
-  overflow: scroll;
 }
+.slider-b7__item__wrap {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 19px;
+  grid-row-gap: 6px;
+}
+.slider-b7__item__wrap__img {
+  grid-area: 1/1/3/2;
+}
+.slider-b7__item__wrap__name {
+  grid-area: 1/2/2/3;
+  text-align: left;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.44;
+  color: #ffffff;
+}
+.slider-b7__item__wrap__date {
+  grid-area: 2/2/3/3;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.44;
+  color: rgba(255, 255, 255, 0.44);
+}
+.slider-b7__item__text {
+  overflow-y: scroll;
+  width: 520px;
+  height: 100px;
+  text-align: left;
+  line-height: 1.44;
+  color: #fff;
+  margin-top: 10px;
+}
+.slider-b7__item__text ::-webkit-scrollbar {
+  width: 55px;
+  background: rgba(223, 8, 8, 0.918);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 85px;
+  background: rgba(184, 9, 9, 0.11);
+  border-radius: 12px;
+}
+
 /* Слайдер */
 .slider-b7 {
   padding-left: 112px;
@@ -834,20 +898,8 @@ main {
 /* Ограничивающая оболочка */
 /* Лента слайдов */
 /* Слайд */
-.slider-b7 .slick-slide {
-  overflow-y: scroll;
-}
-
 /* Слайд активный (показывается) */
-.slick-slide.slick-active {
-  overflow: scroll;
-}
-
 /* Слайд основной */
-.slick-slide.slick-current {
-  overflow: scroll;
-}
-
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
@@ -1365,4 +1417,37 @@ label {
 .service1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero1.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero1.jpg);
+}
+.service5 {
+  padding: 76px 0 50px 72px;
+  margin: 0 55px;
+  background-image: url(../src/img/serviceBgB5.jpg);
+}
+.service5__subtitle {
+  line-height: 1.4;
+}
+.service5__text {
+  font-family: "Catamaran";
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.4;
+  color: #292a24;
+}
+.service5__btn {
+  background-color: #e3022b;
+}
+
+.service7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 76px 0 50px 72px;
+  margin: 0 55px;
+  background-image: url(../src/img/serviceBgB7.jpg);
+}
+.service7 div {
+  margin-right: 173px;
 }/*# sourceMappingURL=main.css.map */

@@ -35,24 +35,44 @@
     }
   }
 }
-.service3{
+.service3 {
   @extend .sd_b8;
-
 }
 
 .service3 {
 }
-// &__frame {
-// }
-// &__title {
-// }
-// &__card {
-// }
-// &__card__item {
-// }
-// &__card__item__icon {
-// }
-// &__card__item__subtitle {
-// }
-// &__card__item__text {
-// }
+
+.service5 {
+  padding: 76px 0 50px 72px;
+  margin: 0 55px;
+  background-image: url(../src/img/serviceBgB5.jpg);
+  &__subtitle {
+    line-height: 1.4;
+  }
+  &__text {
+    @extend .font-title;
+    font-family: "Catamaran";
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.4;
+    color: $text-title;
+  }
+  &__btn {
+    background-color: #e3022b;
+  }
+}
+
+.service6 {
+}
+.service7 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 76px 0 50px 72px;
+  margin: 0 55px;
+  background-image: url(../src/img/serviceBgB7.jpg);
+  & div {
+    margin-right: 173px;
+  }
+}
+.service8 {
+}
