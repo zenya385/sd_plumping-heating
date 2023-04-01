@@ -2,7 +2,7 @@
   // padding: 100px 104px 98px 126px;
   padding-top: 100px;
   padding-right: 104px;
-  padding-bottom: 98px;
+  padding-bottom: 61px;
   padding-left: 126px;
 
   text-align: center;
@@ -22,7 +22,7 @@
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 99px;
-    width: 100%;
+    width: 55%;
 
     font-family: "Catamaran";
     font-weight: 500;
@@ -42,24 +42,7 @@
       border-radius: 41px;
     }
     &__link {
-      // @extend .current;
       color: $link;
-
-      // &.current {
-      //   position: relative;
-      //   color: $accent-color;
-      // &::after {
-      //   content: "";
-      //   display: block;
-      //   position: absolute;
-      //   left: 0;
-      //   bottom: -14px;
-      //   width: 100%;
-      //   height: 4px;
-      //   background: $accent-color;
-      //   border-radius: 2px;
-      // }
-      // }
     }
   }
   &__subtitle {
@@ -85,26 +68,26 @@
       margin-bottom: 34px;
     }
   }
-  // & img {
-  // display: block;
-  // }
   &__wrapper {
     display: flex;
   }
   &__item {
     margin-bottom: 13px;
-  }
-  &__item::before {
-    content: url("../src/img/angle.svg");
-    display: inline-block;
-    width: 17px;
-    height: 15px;
-    margin-right: 14px;
+    &::before {
+      content: url("../src/img/angle.svg");
+      display: inline-block;
+      width: 17px;
+      height: 15px;
+      margin-right: 14px;
+    }
   }
   &__btn {
     @extend .button;
     margin-top: 37px;
     background-color: $bg-primary;
+  }
+  &__service {
+    padding-right: 65px;
   }
 
   @media screen and (max-width: 992px) {
@@ -119,7 +102,7 @@
     }
     &__wrapper {
       flex-direction: column;
-      align-items:center;
+      align-items: center;
     }
     & img {
     }

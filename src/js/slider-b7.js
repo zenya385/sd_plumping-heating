@@ -6,6 +6,6 @@ $(document).ready(function () {
     slidesToScroll: 2,
     infinite: true,
     autoplay: false,
-    // variableWidth: true, 
+    variableWidth: true,
   });
 });
