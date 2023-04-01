@@ -69,19 +69,30 @@
     text-transform: capitalize;
     color: $text-primary;
   }
+  .nav-item a {
+    color: $text-nav-manu;
+  }
   .nav-item {
+    &:hover a {
+      color: $accent-color;
+    }
   }
   //* ========== menu =================
 
   .nav-menu {
     width: 13%; //ширина
     height: 42px; //висота
+
     // background-color: #23232b;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     // padding-top: 80px;
+    &:hover .toggle {
+      color: $accent-color;
+    }
   }
+
   .nav-menu.menu {
     display: grid;
     grid-template-rows: 40px max-content;
@@ -132,7 +143,19 @@
     width: 311px;
     // height: 337px;
     left: 313px;
-
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: calc(50% - 10px);
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid #044b7f;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      transition: border 0.4s;
+      z-index: 10;
+      overflow: hidden;
+    }
     & a {
       font-family: "Raleway";
       font-style: normal;
@@ -142,6 +165,7 @@
       color: #292a24;
     }
   }
+
   .list-item {
     display: flex;
     align-items: center;
@@ -170,27 +194,22 @@
   .toggle:focus ~ .list .list-item {
     transform: translateX(0);
   }
-
-  // ==============================
-  // .current-menu-item {
-  //   position: relative;
-  //   color: $accent-color;
-  // }
   .nav-link {
-    color: $text-nav-manu;
+    // color: $text-nav-manu;
 
-    &__current::after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: -30px;
-      width: 100%;
-      height: 4px;
-      background: $accent-color;
-      border-radius: 2px;
-    }
+    // &__current::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -30px;
+    //   width: 100%;
+    //   height: 4px;
+    //   background: $accent-color;
+    //   border-radius: 2px;
+    // }
   }
+
   .header-btn {
     // width: 158px;
     height: 43px;

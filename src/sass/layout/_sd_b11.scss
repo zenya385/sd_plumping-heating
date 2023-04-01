@@ -1,9 +1,19 @@
 .sd_b11 {
-  height: 400px;
+  height: 626px;
   margin-top: 146px;
   padding-left: 190px;
   padding-right: 190px;
   text-align: center;
+  margin-bottom: 112px;
+  & .container {
+    width: 80rem;
+  }
+  & .accordion-content {
+    text-align: left;
+    p {
+      padding-right: 70px;
+    }
+  }
 
   &__frame {
     @extend .anchor;

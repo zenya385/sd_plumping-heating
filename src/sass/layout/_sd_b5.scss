@@ -2,6 +2,7 @@
   padding-top: 100px;
   padding-bottom: 64px;
   text-align: center;
+
 }
 .sd_b5__frame {
   @extend .anchor;
@@ -9,6 +10,7 @@
 
 .sd_b5__title {
   @extend .font-title;
+  margin-bottom: 80px;
 }
 .sd_b5__subtitle {
   font-family: "Catamaran";
