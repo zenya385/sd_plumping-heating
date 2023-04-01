@@ -78,7 +78,7 @@
       @extend .font-text;
       overflow-y: scroll;
 
-      width: 520px;
+      width: 100%;
       height: 100px;
 
       text-align: left;
@@ -88,6 +88,9 @@
     }
   }
 }
+// @media screen and (max-width: 992px) {
+
+// }
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -103,6 +106,11 @@
 /* Слайдер */
 .slider-b7 {
   padding-left: 112px;
+  @media screen and (max-width: 992px) {
+  
+ padding-left:  35px;
+
+}
 }
 /* Слайдер запущен */
 .slick-slider.slick-initialized {

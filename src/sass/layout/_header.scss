@@ -4,6 +4,7 @@
 
   //* ===============header-contact======================
   .header-contact {
+    // @extend .container;
     display: flex;
     height: 53px;
     padding: 12px 0;
@@ -16,6 +17,7 @@
     padding-right: 55px;
   }
   .header-contact-list {
+    @extend .container;
     display: flex;
     align-items: center;
   }
@@ -210,9 +212,51 @@
     // }
   }
 
-  .header-btn {
+  & .header-btn {
     // width: 158px;
     height: 43px;
-    padding: 10px 26px;
+    padding: 12px 26px;
   }
+  & .menu-open {
+    display: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .header-contact{
+      height: 135px;
+      padding: 10px 0;
+    }
+    .header-contact-item{
+      // margin: 0 auto;
+    }
+    .header-contact-item:not(:last-child) {
+    margin-bottom: 10px; 
+  }
+    .header-contact-list {
+      // display: none;
+      display: flex;
+      flex-direction: column;
+      // height: auto;
+      margin: 0 auto;
+
+    }
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-list {
+      display: none;
+    }
+    .header-btn {
+      display: none;
+    }
+    & .menu-open {
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  // @media screen and (max-width: 480px) {
+  // }
 }

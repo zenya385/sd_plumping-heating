@@ -57,7 +57,7 @@
 //   min-height: 100vh;
 // }
 
-.container {
+.container-accordion {
   margin: 0 auto;
   padding: 2rem;
   width: 49rem;
@@ -177,6 +177,14 @@
       margin-bottom: 23px;
     }
   }
+  //  @media screen and (max-width: 992px) {
+  //   &__wrap{
+  //     flex-direction: column;
+  // justify-content: center;
+  // width: 100%;
+
+  //   }
+  //  }
 }
 
 /* scrollbar */

@@ -50,11 +50,10 @@
       }
       &__text {
         @extend .font-text;
-        background: #0F4485;
-/* #0F4485 */
-
-border: 2px solid #0F4485;
-transform: matrix(0.7, -0.71, 0.7, 0.71, 0, 0);
+        /* #0F4485 */
+//         background: #0F4485;
+// border: 2px solid #0F4485;
+// transform: matrix(0.7, -0.71, 0.7, 0.71, 0, 0);
 
       }
     }

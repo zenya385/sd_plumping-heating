@@ -375,7 +375,49 @@ main {
 }
 .header .header-btn {
   height: 43px;
-  padding: 10px 26px;
+  padding: 12px 26px;
+}
+.header .menu-open {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .header .header-contact {
+    height: 135px;
+    padding: 10px 0;
+  }
+  .header .header-contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header .header-contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .header .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .nav-list {
+    display: none;
+  }
+  .header .header-btn {
+    display: none;
+  }
+  .header .menu-open {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .slider__item, .service1 {
@@ -535,6 +577,11 @@ main {
   line-height: 1.23;
   color: #acacac;
 }
+@media screen and (max-width: 992px) {
+  .sd_b2, .service2 {
+    display: none;
+  }
+}
 
 .sd_b3 {
   display: -webkit-box;
@@ -582,6 +629,27 @@ main {
 }
 .sd_b3__text1:not(:last-child), .sd_b3__text2:not(:last-child) {
   margin-bottom: 23px;
+}
+@media screen and (max-width: 992px) {
+  .sd_b3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sd_b3__img-list, .sd_b9__img-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .sd_b3__wrap {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }
 
 .sd_b4 {
@@ -675,11 +743,9 @@ main {
   padding-bottom: 64px;
   text-align: center;
 }
-
 .sd_b5__title {
   margin-bottom: 80px;
 }
-
 .sd_b5__subtitle {
   font-family: "Catamaran";
   font-style: normal;
@@ -689,7 +755,6 @@ main {
   letter-spacing: 0.015em;
   color: #000000;
 }
-
 .sd_b5__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,13 +762,11 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .sd_b5__card {
   width: 152px;
   height: 257px;
 }
-
-.wrap {
+.sd_b5 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,13 +787,12 @@ main {
   color: #ffffff;
   margin: 0 auto;
 }
-.wrap::after {
+.sd_b5 .wrap::after {
   content: "";
 }
-.border {
-  border: 12px solid #EEE;
+.sd_b5 .border {
+  border: 12px solid #eee;
 }
-
 .sd_b5__request {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,6 +833,26 @@ main {
   padding: 11px 31px 12px 32px;
   margin-top: 30px;
   margin-left: 77px;
+}
+@media screen and (max-width: 992px) {
+  .sd_b5__request {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sd_b5__request__subtitle {
+    text-align: center;
+  }
+  .sd_b5__request__btn {
+    height: 65px;
+  }
+  .sd_b5__request__text {
+    margin: auto;
+  }
 }
 
 .sd_b6 {
@@ -880,7 +962,7 @@ main {
 }
 .slider-b7__item__text {
   overflow-y: scroll;
-  width: 520px;
+  width: 100%;
   height: 100px;
   text-align: left;
   line-height: 1.44;
@@ -902,6 +984,11 @@ main {
 /* Слайдер */
 .slider-b7 {
   padding-left: 112px;
+}
+@media screen and (max-width: 992px) {
+  .slider-b7 {
+    padding-left: 35px;
+  }
 }
 
 /* Слайдер запущен */
@@ -1022,11 +1109,7 @@ main {
   margin-bottom: 7px;
 }
 .sd_b8__card__item__text {
-  background: #0F4485;
   /* #0F4485 */
-  border: 2px solid #0F4485;
-  -webkit-transform: matrix(0.7, -0.71, 0.7, 0.71, 0, 0);
-          transform: matrix(0.7, -0.71, 0.7, 0.71, 0, 0);
 }
 
 .sd_b9 {
@@ -1052,7 +1135,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.container {
+.container-accordion {
   margin: 0 auto;
   padding: 2rem;
   width: 49rem;
@@ -1225,7 +1308,7 @@ main {
   text-align: center;
   margin-bottom: 112px;
 }
-.sd_b11 .container {
+.sd_b11 .container, .sd_b11 .header .header-contact-list, .header .sd_b11 .header-contact-list {
   width: 80rem;
 }
 .sd_b11 .accordion-content {
@@ -1513,6 +1596,9 @@ main {
 }
 
 .service1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))), url(../src/img/hero1.jpg);
   background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%), url(../src/img/hero1.jpg);
 }

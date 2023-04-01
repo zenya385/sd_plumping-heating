@@ -2,114 +2,129 @@
   padding-top: 100px;
   padding-bottom: 64px;
   text-align: center;
-
-}
-.sd_b5__frame {
-  @extend .anchor;
-}
-
-.sd_b5__title {
-  @extend .font-title;
-  margin-bottom: 80px;
-}
-.sd_b5__subtitle {
-  font-family: "Catamaran";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 1.4;
-  letter-spacing: 0.015em;
-  color: #000000;
-}
-.sd_b5__list {
-  display: flex;
-  justify-content: space-around;
-
-}
-.sd_b5__card {
-width: 152px;
-height: 257px;
-}
-.sd_b5__icon {
-}
-
-.wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-weight: 700;
-  width: 24px;
-  height: 24px;
-  padding: 6px;
-  border-radius: 50%;
-  background-color: red;
-  font-size: 19px;
-  color: #ffffff;
-margin: 0 auto;
-  &::after{
-    content: "";
-//     width: 100%;
-
-//     background: #EEEEEE;
-// border-radius: 41px;
-    // content: "";
-    // display: block;
-    // position: absolute;
-    // left: -1px;
-    // bottom: -21px;
-    // width: 151%;
-    // height: 10px;
-    // background: #eee;
-    // border-radius: 41px;
+  &__frame {
+    @extend .anchor;
   }
-  &__letter {
-}
-}
-.border{
-  border: 12px solid #EEE;
-}
-.sd_b5__subtitle {
-}
-.sd_b5__request {
-  display: flex;
-  justify-content: end;
-  height: 207px;
-  padding: 51px 76px 81px;
-  background-image: url(../src/img/sd_b5-1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
+  &__title {
+    @extend .font-title;
+    margin-bottom: 80px;
+  }
   &__subtitle {
-    margin-bottom: 7px;
-    text-align: start;
-
     font-family: "Catamaran";
     font-style: normal;
     font-weight: 600;
-    font-size: 31px;
-    line-height: 51px;
-    color: $text-white;
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0.015em;
+    color: #000000;
   }
-  &__text {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
-
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__card {
+    width: 152px;
+    height: 257px;
+  }
+  & .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 19px;
     color: #ffffff;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      //     width: 100%;
+
+      //     background: #EEEEEE;
+      // border-radius: 41px;
+      // content: "";
+      // display: block;
+      // position: absolute;
+      // left: -1px;
+      // bottom: -21px;
+      // width: 151%;
+      // height: 10px;
+      // background: #eee;
+      // border-radius: 41px;
+    }
+    &__letter {
+    }
   }
-  &__btn {
-    @extend .button;
-    background-color: $text-white;
-    color: $bg-btn-pimary;
-    height: 45px;
-    border-top-left-radius: 20px;
-    padding: 11px 31px 12px 32px;
-    margin-top: 30px;
-    margin-left: 77px;
-    // border: none;
+  & .border {
+    border: 12px solid #eee;
   }
+  &__request {
+    display: flex;
+    justify-content: end;
+    height: 207px;
+    padding: 51px 76px 81px;
+    background-image: url(../src/img/sd_b5-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__subtitle {
+      margin-bottom: 7px;
+      text-align: start;
+
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 31px;
+      line-height: 51px;
+      color: $text-white;
+    }
+    &__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+
+      color: #ffffff;
+    }
+    &__btn {
+      @extend .button;
+      background-color: $text-white;
+      color: $bg-btn-pimary;
+      height: 45px;
+      border-top-left-radius: 20px;
+      padding: 11px 31px 12px 32px;
+      margin-top: 30px;
+      margin-left: 77px;
+      // border: none;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__request{
+      height: 300px;
+      display: flex;
+      align-items: center;
+      // padding: ;
+    }
+    
+    &__request__subtitle {
+      text-align: center;
+    }
+     &__request__btn{
+      height: 65px;
+     }
+     &__request__text{
+      margin: auto;
+     }
+  }
+    // @media screen and (max-width: 500px) {
+
+    // }
 }
+

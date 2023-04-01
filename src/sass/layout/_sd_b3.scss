@@ -52,4 +52,17 @@
       margin-bottom: 23px;
     }
   }
+     @media screen and (max-width: 992px) {
+flex-direction: column;
+justify-content: center;
+&__img-list{
+  justify-content: center;
+  width: 100%;
+}
+&__wrap{
+
+  margin: 0 auto;
+  margin-top: 32px;
+}
+}
 }
