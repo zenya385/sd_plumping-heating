@@ -1,5 +1,5 @@
 .sd_b10 {
-  height: 630px;
+  height: 100%;
   padding-left: 55px;
   padding-right: 55px;
   margin-top: 91px;
@@ -13,10 +13,11 @@
   }
   &__cardList {
     display: flex;
-    justify-content: space-around;
+    // flex-wrap: nowrap;
+    // justify-content: space-around;
     &__card {
-      width: 312px;
-      height: 515px;
+      width: calc((100% - 4 * 37px) / 4);
+      margin: 17px;
       &__img {
         margin-bottom: 18px;
       }
@@ -52,8 +53,22 @@
         font-size: 17px;
         line-height: 1.34;
         text-transform: capitalize;
-        color: #0F4485;
+        color: #0f4485;
       }
     }
   }
+  // @media screen and (max-width: 992px) {
+  //   &__cardList {
+  //     // display: flex;
+  //     // flex-wrap: nowrap;
+  //     // flex-direction: column;
+  //     text-align: center;
+  //     &__card {
+  //       text-align: center;
+  //       // width: calc((100% - 2 * 20px) / 2);
+  //       width: calc((100% - 2 * 17px) / 2);
+  //       // margin: 17px;
+  //     }
+  //   }
+  // }
 }

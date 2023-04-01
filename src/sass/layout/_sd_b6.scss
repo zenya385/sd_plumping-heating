@@ -31,7 +31,6 @@
       }
       &__text {
         @extend .font-text;
-
         margin-bottom: 34px;
         padding-left: 145px;
         padding-right: 145px;
@@ -43,4 +42,18 @@
       }
     }
   }
+     @media screen and (max-width: 992px) {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-bottom: 0;
+    padding-right: 30px;
+    &__wrap__bg__subtitle{
+      margin-top: 120px;
+    }
+ &__wrap__bg__text{
+      margin-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+ }
+}
 }

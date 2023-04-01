@@ -1,12 +1,12 @@
 .sd_b11 {
-  height: 626px;
+  height: 100%;
   margin-top: 146px;
   padding-left: 190px;
   padding-right: 190px;
   text-align: center;
   margin-bottom: 112px;
-  & .container {
-    width: 80rem;
+  &__container {
+    width: 100%;
   }
   & .accordion-content {
     text-align: left;
@@ -30,7 +30,7 @@
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 99px;
-    width: 580px;
+    width: 100%;
 
     font-family: "Catamaran";
     font-weight: 500;
