@@ -1,0 +1,6 @@
+.bathroom {
+      background-image: linear-gradient(263.26deg, rgba(113, 150, 196, 0.228) 3.54%, rgba(15, 68, 133, 0.3021) 86.23%),url(../src/img/hero4.jpg);
+& .sd_b3__text{
+  @extend .font-text;
+}
+}

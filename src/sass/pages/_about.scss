@@ -1,0 +1,14 @@
+.about {
+  background-image: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.228) 0%,
+      rgba(0, 0, 0, 0.4731) 86.98%
+    )
+    url(../src/img/home-hero.jpg);
+
+  // backdrop-filter: url(../src/img/home-hero.jpg), blur(1.5px);
+& .sd_b3__text{
+  @extend .font-text;
+text-align: left;
+}
+}

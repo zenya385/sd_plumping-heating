@@ -73,7 +73,7 @@ main {
   color: #292a24;
 }
 
-.font-text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .slider-b7__item__text, .sd_b7__text, .sd_b6__wrap__bg__text, .sd_b4__text, .sd_b4__list {
+.font-text, .about .sd_b3__text, .bathroom .sd_b3__text, .service9__text, .sd_b10__cardList__card__text, .sd_b8__card__item__text, .sd_b8__text, .slider-b7__item__text, .sd_b7__text, .sd_b6__wrap__bg__text, .sd_b4__text, .sd_b4__list {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 17px;
@@ -1265,6 +1265,7 @@ main {
   font-size: 17px;
   line-height: 1.34;
   color: #585858;
+  text-align: left;
 }
 .accordion .accordion-content {
   opacity: 0;
@@ -1864,22 +1865,76 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 44px 54px 58px 44px;
   background-color: #f0f0f0;
 }
-.service9 .wrap-img {
-  display: inline-block;
+.service9__wrap-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.service9 .wrap-img img {
-  display: inline-block;
+.service9 img {
+  max-width: none;
 }
-.service9 .wrap-img img:not(:last-child) {
+.service9 img:not(:last-child) {
   margin-right: 52px;
+}
+.service9__wrap-text {
+  margin-left: 100px;
+  text-align: left;
+}
+.service9__text {
+  text-align: left;
 }
 .service9__frame {
   margin-top: 14px;
+  text-align: left;
 }
 .service9__title {
   margin-top: 17px;
   margin-bottom: 17px;
+  text-align: left;
+}
+@media screen and (max-width: 992px) {
+  .service9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .service9__text {
+    margin-bottom: 25px;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(263.26deg, rgba(113, 150, 196, 0.228) 3.54%, rgba(15, 68, 133, 0.3021) 86.23%), url(../src/img/hero2.jpg);
+}
+
+.blog {
+  background-image: linear-gradient(90.21deg, rgba(0, 0, 0, 0.44) 0.15%, rgba(1, 0, 0, 0) 99.8%), url(../src/img/hero3.jpg);
+}
+
+.blog {
+  background-image: linear-gradient(90.21deg, rgba(0, 0, 0, 0.44) 0.15%, rgba(1, 0, 0, 0) 99.8%), url(../src/img/hero3.jpg);
+}
+
+.bathroom {
+  background-image: linear-gradient(263.26deg, rgba(113, 150, 196, 0.228) 3.54%, rgba(15, 68, 133, 0.3021) 86.23%), url(../src/img/hero4.jpg);
+}
+.about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.228)), color-stop(86.98%, rgba(0, 0, 0, 0.4731))) url(../src/img/home-hero.jpg);
+  background-image: linear-gradient(180deg, rgba(53, 53, 53, 0.228) 0%, rgba(0, 0, 0, 0.4731) 86.98%) url(../src/img/home-hero.jpg);
+}
+.about .sd_b3__text {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
