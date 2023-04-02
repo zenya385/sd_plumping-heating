@@ -1,4 +1,70 @@
 .blog {
-  background-image: linear-gradient(90.21deg, rgba(0, 0, 0, 0.44) 0.15%, rgba(1, 0, 0, 0) 99.8%),
-    url(../src/img/hero3.jpg);
+  & .blog-bg {
+    background-image: linear-gradient(
+        90.21deg,
+        rgba(0, 0, 0, 0.44) 0.15%,
+        rgba(1, 0, 0, 0) 99.8%
+      ),
+      url(../src/img/hero3.jpg);
+  }
+  & .sd_b10__cardList__card {
+    width: calc((100% - 3 * 37px) / 3);
+    margin: 17px;
+  }
+
+& .pagination{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+ 
+
+  @media screen and (max-width: 992px) {
+    & .sd_b10__cardList__card {
+      width: calc((100% - 1 * 200px) / 1);
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  }
+}
+// ====================   pagination   ============================
+.blog-pagination {
+  width: 100%;
+  margin-top: 94px;
+  margin-bottom: 94px;
+text-align: center;
+
+ .pagination {
+    display: inline-block;
+    padding: 0;
+    // margin: 0 auto;
+}
+
+ .pagination li {
+  display: inline;
+}
+
+ .pagination li a {
+    color: #ACACAC;
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ACACAC;
+    border-radius: 6px;
+    margin: 0 7px;
+}
+
+.pagination li a.active {
+    background-color: #0F4485;
+    color: white;
+    border: 1px solid #0F4485;
+    border-radius: 6px;
+}
+
+.pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}
 }

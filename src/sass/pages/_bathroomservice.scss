@@ -1,6 +1,87 @@
-.bathroom {
-      background-image: linear-gradient(263.26deg, rgba(113, 150, 196, 0.228) 3.54%, rgba(15, 68, 133, 0.3021) 86.23%),url(../src/img/hero4.jpg);
-& .sd_b3__text{
+.bathroom1 {
+  background-image: linear-gradient(
+      263.26deg,
+      rgba(113, 150, 196, 0.228) 3.54%,
+      rgba(15, 68, 133, 0.3021) 86.23%
+    ),
+    url(../src/img/hero4.jpg);
+}
+.bathroom2 {
+
+}
+
+.bathroom3 {
+  & .current-menu-item {
+  @extend .current-menu-item;
+  &:after {
+    bottom: -20px;
+    height: 10px;
+    z-index: 10;
+  }
+}
+  & .sd_b4__text1 {
   @extend .font-text;
+  text-align: left;
+  margin-bottom: 64px;
 }
 }
+.bathroom4 {
+    display: grid; 
+  grid-template-columns: 429px 429px 424px; 
+  grid-template-rows: 240px 21px 436px; 
+  gap: 23px 25px; 
+  grid-template-areas: 
+    "item1 item2 item3"
+    "item1 item5 item3"
+    "item4 item5 item3";
+
+    padding-left: 55px;
+    padding-right: 55px;
+
+  .wrap-item1 {
+     grid-area: item1; 
+    text-align: left;
+    // width: 430px;
+    // height: 200px;
+    & .sd_b4__frame {
+      margin-bottom: 13px;
+    }
+    & .sd_b4__title {
+          text-align: left;
+          margin-bottom: 16px;
+    }
+    & .sd_b4__text1 {
+    }
+    & .sd_b4__btn{
+margin-top: 31px;
+    }
+}
+& .wrap-item2 {
+   grid-area: item2; 
+}
+& .wrap-item3 {
+   grid-area: item3; 
+}
+& .wrap-item4 {
+   grid-area: item4; 
+}
+& .wrap-item5 {
+   grid-area: item5; 
+}
+}
+
+
+.bathroom5 {
+}
+.bathroom6 {
+}
+.bathroom7 {
+}
+.bathroom8 {
+}
+// & .sd_b3__text {
+//   @extend .font-text;
+// }
+
+
+
