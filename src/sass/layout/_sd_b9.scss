@@ -190,7 +190,11 @@ font-size: 17px;
 line-height: 1.34;
 text-transform: capitalize;
 color: #0F4485;
-    }
+  &::after{
+    content: "\1F86D";
+    margin-left: 5px;
+  }
+}
   }
   //  @media screen and (max-width: 992px) {
   //   &__wrap{
