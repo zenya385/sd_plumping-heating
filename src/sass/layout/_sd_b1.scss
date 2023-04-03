@@ -1,4 +1,5 @@
 .slider__item {
+  // @extend .container;
   position: relative;
   height: 580px;
   padding-top: 164px;
@@ -13,37 +14,37 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  &:nth-child(3){
-  background-image: linear-gradient(
-      180deg,
-      rgba(53, 53, 53, 0.228) 0%,
-      rgba(0, 0, 0, 0.4731) 86.98%
-    ),
-    url(../src/img/hero1.jpg);
+  &:nth-child(3) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(53, 53, 53, 0.228) 0%,
+        rgba(0, 0, 0, 0.4731) 86.98%
+      ),
+      url(../src/img/hero1.jpg);
   }
-  &:nth-child(4){
-  background-image: linear-gradient(
-      180deg,
-      rgba(53, 53, 53, 0.228) 0%,
-      rgba(0, 0, 0, 0.4731) 86.98%
-    ),
-    url(../src/img/hero2.jpg);
+  &:nth-child(4) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(53, 53, 53, 0.228) 0%,
+        rgba(0, 0, 0, 0.4731) 86.98%
+      ),
+      url(../src/img/hero2.jpg);
   }
-  &:nth-child(5){
-  background-image: linear-gradient(
-      180deg,
-      rgba(53, 53, 53, 0.228) 0%,
-      rgba(0, 0, 0, 0.4731) 86.98%
-    ),
-    url(../src/img/hero3.jpg);
+  &:nth-child(5) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(53, 53, 53, 0.228) 0%,
+        rgba(0, 0, 0, 0.4731) 86.98%
+      ),
+      url(../src/img/hero3.jpg);
   }
-  &:nth-child(6){
-  background-image: linear-gradient(
-      180deg,
-      rgba(53, 53, 53, 0.228) 0%,
-      rgba(0, 0, 0, 0.4731) 86.98%
-    ),
-    url(../src/img/hero4.jpg);
+  &:nth-child(6) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(53, 53, 53, 0.228) 0%,
+        rgba(0, 0, 0, 0.4731) 86.98%
+      ),
+      url(../src/img/hero4.jpg);
   }
 
   &__title {
@@ -64,7 +65,6 @@
     color: $text-white;
     max-width: 679px;
     margin-bottom: 36px;
-
   }
 
   &__btn {
@@ -72,6 +72,15 @@
     padding: 14px 38px;
   }
 }
+// @media screen and (max-width: 1260px) {
+// width: 1260px
+// }
+// @media screen and (max-width: 992px) {
+// width: 992px
+// }
+// @media screen and (max-width: 600px) {
+
+// }
 
 /* Слайдер */
 .slick-slider {
@@ -132,15 +141,14 @@
 .slick-dots li {
   list-style: none;
   margin-top: -46px;
-    z-index: 10;
+  z-index: 10;
 }
 /* Активная точка */
-.slick-dots li.slick-active button{
+.slick-dots li.slick-active button {
   width: 46px;
   height: 9px;
   border: 1px solid #fff;
   background: #fff;
-
 }
 /* Элемент точки */
 .slick-dots li button {

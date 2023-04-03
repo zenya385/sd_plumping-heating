@@ -51,6 +51,12 @@
     }
     &__link {
       color: $link;
+      
+
     }
+  }
+        & .current-menu-item::after{
+  bottom: -20px; 
+  z-index: 10px;
   }
 }

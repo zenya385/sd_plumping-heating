@@ -1,15 +1,35 @@
 .container{
-    width: 100%;
-  padding-left: 55px;
-  padding-right: 55px;
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
   margin-right: auto;
   margin-left: auto;
 
- @media screen and (max-width: 1024px) {
-   max-width: 1024px;
+ @media screen and (max-width: 1260px) {
+   max-width: 1260px;
+  padding-left: 25px;
+  padding-right: 25px;
+  }
+ @media screen and (max-width: 992px) {
+   max-width: 992px;
   }
   @media screen and (max-width: 600px) {
     max-width: 600px;
 
   }
 }
+
+//  @media screen and (max-width: 1260px) {}
+//  @media screen and (max-width: 992px) {}
+//   @media screen and (max-width: 600px) {}
+
+
+      //  &:nth-child(1) {
+
+      //   }
+      //   &:nth-child(2) {
+ 
+      //   }
+      //   &:nth-child(3) {
+
+      //   }
