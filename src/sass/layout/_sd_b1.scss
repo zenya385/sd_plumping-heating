@@ -71,17 +71,32 @@
     @extend .button;
     padding: 14px 38px;
   }
+  // @media screen and (max-width: 1260px) {
+  // width: 1260px
+  // }
+  // @media screen and (max-width: 992px) {
+  // width: 992px
+  // }
+  @media screen and (max-width: 600px) {
+    padding-top: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    &__title{
+      line-height: 1.14;
+&:nth-child(2){
+  padding-top: 10px;
 }
-// @media screen and (max-width: 1260px) {
-// width: 1260px
-// }
-// @media screen and (max-width: 992px) {
-// width: 992px
-// }
-// @media screen and (max-width: 600px) {
+    }
+    &__text {
+    text-align: left;
+    overflow-y: scroll;
+    }
 
-// }
-
+  }
+}
 /* Слайдер */
 .slick-slider {
 }

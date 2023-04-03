@@ -1,9 +1,15 @@
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
+  width: 100%;
+  overflow-x: hidden;
 }
-main{
- flex: 1; 
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
+main {
+  flex: 1;
 }
