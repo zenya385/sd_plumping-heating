@@ -19,12 +19,11 @@
       font-weight: 500;
       font-size: 17px;
       line-height: 1.23;
-
+      text-align: center;
       color: #acacac;
     }
   }
-   @media screen and (max-width: 992px) {
-display: none;
-
-}
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }

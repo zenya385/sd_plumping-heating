@@ -4,22 +4,23 @@
 
   //* ===============header-contact======================
   .header-contact {
-    // @extend .container;
     display: flex;
     height: 53px;
-    padding: 12px 0;
+    padding: 12px;
     background-color: $bg-header;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   .header-contact-list {
-    // @extend .container;
     display: flex;
     align-items: center;
+    // height: 100%;
+    // flex-flow: row wrap;
+    gap: 100px;
   }
   .header-contact-item {
     display: flex;
@@ -28,14 +29,30 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-
+    & svg {
+      flex: 0 0 auto;
+    }
     &:not(:last-child) {
-      margin-right: 105px;
+      // margin-right: 80px;
+    }
+    &:nth-child(1) {
+      // flex: 0 0 295px ;
+      flex-basis: 475px;
+      min-width: 293px;
+      max-width: 475px;
+      flex-wrap: nowrap;
+    }
+    &:nth-child(2) {
+      flex: 0 0 1;
+    }
+    &:nth-child(3) {
+      flex: 0 0 auto;
     }
   }
   .header-contact-link {
     display: flex;
     align-items: center;
+    text-align: center;
     color: $text-primary;
   }
   .header-contact__icon {
@@ -48,21 +65,18 @@
   //* ===============header-navigation======================
 
   .header-nav {
+    position: relative;
     display: flex;
     padding: 16px 55px 18px 55px;
     // justify-content: space-between;
     // flex: 3;
   }
-  .heaer-logo {
-  }
-  .header-logo-img {
-  }
+
   .nav-list {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
     flex: 1;
-    // min-width: 780px;
     font-family: "Raleway";
     font-weight: 600;
     font-size: 18px;
@@ -82,14 +96,12 @@
   //* ========== menu =================
 
   .nav-menu {
-    width: 13%; //ширина
-    height: 42px; //висота
-
-    // background-color: #23232b;
+    width: 13%;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    // padding-top: 80px;
+
     &:hover .toggle {
       color: $accent-color;
     }
@@ -129,12 +141,11 @@
 
   .list {
     position: absolute;
-    // padding: 29px;
     background: #ffffff;
     box-shadow: 0px 24px 32px 4px rgba(167, 174, 186, 0.12);
     border-radius: 4px;
     color: #444;
-    list-style: none;
+    // list-style: none;
     display: grid;
     grid-template-rows: repeat(7, 48px);
     overflow: hidden;
@@ -143,7 +154,6 @@
     margin-top: 43px;
     z-index: 10;
     width: 311px;
-    // height: 337px;
     left: 313px;
     &::after {
       content: "";
@@ -196,53 +206,52 @@
   .toggle:focus ~ .list .list-item {
     transform: translateX(0);
   }
-  .nav-link {
-    // color: $text-nav-manu;
-
-    // &__current::after {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   left: 0;
-    //   bottom: -30px;
-    //   width: 100%;
-    //   height: 4px;
-    //   background: $accent-color;
-    //   border-radius: 2px;
-    // }
-  }
 
   & .header-btn {
-    // width: 158px;
     height: 43px;
     padding: 12px 26px;
   }
   & .menu-open {
     display: none;
   }
-  
+
   @media screen and (max-width: 992px) {
-    .header-contact{
+    .header-contact {
       height: 135px;
       padding: 10px 0;
+      gap: 0;
     }
-    .header-contact-item{
-      // margin: 0 auto;
+    .header-contact-item {
+      align-self: start;
+      padding-left: 5%;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:nth-child(1) {
+         flex: 0 0 auto;
+        // flex-basis: 500px;
+        // min-width: 475px;
+        // max-width: 475px;
+      }
+      &:nth-child(2) {
+        flex: 0 0 auto;
+      }
+      &:nth-child(3) {
+        flex: 0 0 auto;
+      }
     }
-    .header-contact-item:not(:last-child) {
-    margin-bottom: 10px; 
-  }
     .header-contact-list {
-      // display: none;
       display: flex;
       flex-direction: column;
-      // height: auto;
-      margin: 0 auto;
-
+      justify-content: start;
+      gap: 0;
+      text-align: left;
     }
     .header-nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px 15px 20px;
     }
     .nav-list {
       display: none;
@@ -257,6 +266,4 @@
       cursor: pointer;
     }
   }
-  // @media screen and (max-width: 480px) {
-  // }
 }

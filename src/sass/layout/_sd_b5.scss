@@ -18,21 +18,39 @@
     line-height: 1.4;
     letter-spacing: 0.015em;
     color: #000000;
+    margin-bottom: 18px;
+  }
+    &__text{
+    font-family: 'Montserrat';
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+text-align: center;
+color: #585858;
   }
   &__list {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 28px;
   }
   &__card {
-    width: 152px;
-    height: 257px;
+    width: 260px;
+    height:190px;
+    margin-bottom: 128px;
+  }
+  & .icon-b5{
+    padding: 20px;
   }
   & .wrap {
+    text-align: center;
+    background-color: #eee;
+    margin: 0 auto;
+
     &__border {
-      // border: 12px solid #089755;
-      background-color: #eee;
-      width: 150%;
-      // z-index: -2;
+      width: 100%;
+      margin-bottom: 55px;
+
       &__letter {
         display: flex;
         justify-content: center;
@@ -47,28 +65,11 @@
         font-size: 19px;
         color: #ffffff;
         margin: 0 auto;
-        // display: block;
-        // &::after {
-        //   content: "";
-        //   width:300px;
-
-        //   background: #d31111;
-        //   border-radius: 41px;
-        //   display: block;
-        //   position: absolute;
-        //   left: -1px;
-        //   bottom: -21px;
-        //   width: 151%;
-        //   height: 10px;
-        //   background: #eee;
-        //   border-radius: 41px;
-        // }
+    
       }
     }
   }
-  // & .border {
-  //   border: 12px solid #eee;
-  // }
+
   &__request {
     display: flex;
     justify-content: end;
