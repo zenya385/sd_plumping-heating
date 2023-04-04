@@ -116,7 +116,7 @@ main {
   color: #292a24;
 }
 
-.font-link, .footer .wrapContact__title, .footer .wrapSitemap, .footer .wrapServices, .footer__nav .logoBox p {
+.font-link, .footer__nav .wrapContact__title, .footer__nav .wrapSitemap, .footer__nav .wrapServices, .footer__nav .logoBox p {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 19px;
@@ -259,19 +259,19 @@ main {
 @media screen and (max-width: 992px) {
   .header .header-contact__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 50%;
     grid-template-rows: 1fr 1fr;
   }
-  .header .header-contact__list:nth-child(1) {
-    display: grid;
+  .header .header-contact__list li:nth-child(1) {
     width: 100%;
     grid-area: 1/1/3/2;
+    margin-left: 20px;
   }
-  .header .header-contact__list:nth-child(2) {
-    grid-area: 2/1/2/3;
+  .header .header-contact__list li:nth-child(2) {
+    grid-area: 2/2/1/2;
   }
-  .header .header-contact__list:nth-child(3) {
-    grid-area: 2/2/3/3;
+  .header .header-contact__list li:nth-child(3) {
+    grid-area: 2/2/2/2;
   }
   .header .header-contact__icon {
     display: none;
@@ -435,54 +435,29 @@ main {
 }
 .header .header-btn {
   height: 43px;
-  padding: 12px 26px;
+  padding: 12px 23px;
 }
 .header .menu-open {
   display: none;
 }
+@media screen and (max-width: 1260px) {
+  .header .header-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 10px 25px;
+  }
+  .header .header-nav .nav-list {
+    grid-area: 2/1/3/3;
+  }
+  .header .header-nav .header-logo {
+    grid-area: 1/1/3/2;
+  }
+  .header .header-nav .header-btn {
+    grid-area: 1/2/2/3;
+  }
+}
 @media screen and (max-width: 992px) {
-  .header .header-contact {
-    height: 135px;
-    padding: 10px 0;
-    gap: 0;
-  }
-  .header .header-contact-item {
-    -ms-flex-item-align: start;
-        align-self: start;
-    padding-left: 5%;
-  }
-  .header .header-contact-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .header .header-contact-item:nth-child(1) {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-  .header .header-contact-item:nth-child(2) {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-  .header .header-contact-item:nth-child(3) {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-  .header .header-contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    gap: 0;
-    text-align: left;
-  }
   .header .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -493,7 +468,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 15px 45px;
   }
   .header .nav-list {
     display: none;
@@ -1789,7 +1764,7 @@ main {
   display: flex;
 }
 .sd_b12__wrap__info {
-  height: 380px;
+  height: 100%;
   border-right: 2px solid #eeeeee;
   padding-right: 67px;
   padding-bottom: 51px;
@@ -1900,7 +1875,9 @@ main {
   .sd_b12__wrap__form__user {
     width: 100%;
     margin: auto;
-    white-space: nowrap;
+  }
+  .sd_b12__wrap__info {
+    padding-right: 15px;
   }
 }
 
@@ -1917,6 +1894,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  word-wrap: break-word;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -1953,10 +1931,13 @@ main {
   padding-top: 61px;
   padding-bottom: 34px;
   background-image: url(../src/img/footer-bg.png);
-  background-size: 100% 100%;
+  background-color: #212121;
+  background-position: bottom right;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .footer__nav .logoBox {
-  width: 25%;
+  width: 20%;
 }
 .footer__nav .logoBox a {
   margin-bottom: 22px;
@@ -1968,7 +1949,7 @@ main {
   text-align: left;
   margin-left: -10px;
   width: 100%;
-  margin-bottom: 49px;
+  margin-bottom: 20px;
   margin-top: 23px;
 }
 .footer__nav .logoBox__list__icon {
@@ -1984,6 +1965,99 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+.footer__nav .wrapSitemap__title {
+  color: #A5A5A5;
+  margin-bottom: 15px;
+}
+.footer__nav .wrapSitemap__list__item {
+  margin-bottom: 8px;
+}
+.footer__nav .wrapSitemap__list__item a {
+  color: #fefefe;
+}
+.footer__nav .wrapServices__title {
+  margin-bottom: 15px;
+}
+.footer__nav .wrapServices__list__item {
+  margin-bottom: 8px;
+}
+.footer__nav .wrapServices__list__item a {
+  color: #fefefe;
+}
+.footer__nav .wrapContact__title {
+  margin-bottom: 15px;
+}
+.footer__nav .wrapContact__list__item:not(:last-child) {
+  margin-bottom: 22px;
+}
+.footer__nav .wrapContact__list__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f7f7f7;
+}
+.footer__nav .wrapContact__list__item a svg {
+  margin-right: 18px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .footer__nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+  }
+  .footer__nav .logoBox {
+    width: 100%;
+    grid-area: 1/1/3/2;
+  }
+  .footer__nav .wrapSitemap, .footer__nav .wrapServices {
+    grid-area: 2/2/3/3;
+  }
+  .footer__nav .wrapContact {
+    grid-area: 1/2/2/3;
+  }
+  .footer__nav .wrapServices {
+    grid-area: 2/1/2/3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__nav .logoBox {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__nav .logoBox p {
+    display: none;
+  }
+  .footer__nav .logoBox__list {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .footer__nav .wrapSitemap, .footer__nav .wrapServices {
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 .footer__rights {
   height: 100%;
@@ -2008,72 +2082,17 @@ main {
   letter-spacing: 0.015em;
   color: #8a8a8a;
 }
-.footer__rights__text1 {
+.footer__rights__text1 a {
   margin-right: 185px;
+  word-wrap: break-word;
 }
-.footer__rights__text2 {
+.footer__rights__text2 a {
   justify-self: center;
+  word-wrap: break-word;
 }
-.footer .wrapSitemap__title {
-  color: #A5A5A5;
-  margin-bottom: 15px;
-}
-.footer .wrapSitemap__list__item {
-  margin-bottom: 8px;
-}
-.footer .wrapSitemap__list__item a {
-  color: #fefefe;
-}
-.footer .wrapServices__title {
-  margin-bottom: 15px;
-}
-.footer .wrapServices__list__item {
-  margin-bottom: 8px;
-}
-.footer .wrapServices__list__item a {
-  color: #fefefe;
-}
-.footer .wrapContact__title {
-  margin-bottom: 15px;
-}
-.footer .wrapContact__list__item:not(:last-child) {
-  margin-bottom: 22px;
-}
-.footer .wrapContact__list__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #f7f7f7;
-}
-.footer .wrapContact__list__item a svg {
-  margin-right: 18px;
-  border-radius: 8px;
-  padding: 5px;
-  background-color: #fff;
-}
-@media screen and (max-width: 992px) {
-  .footer__nav {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px 20px;
-  }
-  .footer__nav__logoBox {
-    grid-area: 1/1/3/2;
-  }
-  .footer__nav__wrapContact {
-    grid-area: 1/2/2/3;
-  }
-  .footer__nav__footerImg {
-    grid-area: 2/2/3/3;
+@media screen and (max-width: 600px) {
+  .footer__rights {
+    padding: 5px;
   }
 }
 
