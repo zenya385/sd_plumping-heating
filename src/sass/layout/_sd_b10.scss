@@ -70,4 +70,12 @@
       margin: 8px;
     }
   }
+   @media screen and (max-width: 600px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    &__cardList__card {
+      width: calc((100% - 1 * 16px) / 1);
+      margin: 8px;
+    }
+   }
 }

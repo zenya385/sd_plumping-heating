@@ -49,14 +49,28 @@
       background: #eeeeee;
       border-radius: 41px;
     }
+      & .current-menu-item::after{
+ bottom: -20px;
+ z-index: 10; 
+}
     &__link {
       color: $link;
       
 
     }
   }
-        & .current-menu-item::after{
-  bottom: -20px; 
-  z-index: 10px;
+
+ @media screen and (max-width: 992px) {
+
+&__wrap{
+  flex-direction: column;
+ & ::after{
+    display: none;
   }
+}
+      & .current-menu-item::after{
+ bottom: -20px;
+ z-index: 10; 
+      }
+ }
 }

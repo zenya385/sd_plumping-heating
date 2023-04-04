@@ -5,13 +5,13 @@
   padding-right: 55px;
   padding-left: 55px;
   padding-bottom: 64px;
-  // text-align: center;
+  text-align: center;
 
   &__frame {
     @extend .anchor;
 
     // min-width: 150px;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
   }
   &__title {
@@ -32,9 +32,17 @@
  @media screen and (max-width: 1260px) {
    &__wrap{
      flex-direction: column;
+   
+   }
+   &__img-list {
+    margin: 0 auto; 
+    margin-top: 40px;
    }
  }
        @media screen and (max-width: 992px) {
+       &__img-list {
+        
+       } 
 }
  @media screen and (max-width: 600px) {}
 }

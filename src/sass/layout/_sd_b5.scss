@@ -1,5 +1,4 @@
 .sd_b5 {
-  @extend .container;
   padding-top: 100px;
   padding-bottom: 64px;
   text-align: center;
@@ -30,30 +29,36 @@
     color: #585858;
   }
   &__list {
+    @extend .container;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // justify-content: space-around;
     align-items: baseline;
     // margin-bottom: 28px;
-  }
-  &__card {
-    // @extend .container;
-    width: 260px;
-    // height: 190px;
-    margin-bottom: 120px;
-    flex-grow: 0;
-    
-    flex-shrink: 0;
-
-    flex-basis: calc((100% - 4 * 1px) / 4);
-    margin: 0 1px;
     @media screen and (max-width: 992px) {
-      flex-basis: calc((100% - 2 * 1px) / 2);
-      margin: 0 1px;
+      flex-wrap: wrap;
     }
     @media screen and (max-width: 600px) {
-      // flex-basis: calc((100% - 1 * 1px) / 1);
+      flex-basis: calc((100% - 1 * 1px) / 1);
       // margin: 1px;
+    }
+  }
+  &__card {
+    // width: 260px;
+    // height: 190px;
+    margin-bottom: 120px;
+    // flex-grow: 0;
+    // flex-shrink: 0;
+
+    flex-basis: calc((100% - 4 * 1px) / 4);
+    // margin: 0 ;
+    @media screen and (max-width: 992px) {
+      flex-basis: calc((100% - 2 * 1px) / 2);
+      margin: 0 1;
+    }
+    @media screen and (max-width: 600px) {
+      flex-basis: calc((100% - 1 * 1px) / 1);
+      margin: 1px;
     }
   }
   & .icon-b5 {
@@ -63,6 +68,13 @@
     text-align: center;
     background-color: #eee;
     margin: 0 auto;
+
+    &:nth-child(1) {
+      border-radius: 30px;
+    }
+    &:nth-child(4) {
+      background-color: #1614bd;
+    }
 
     &__border {
       // width: 98%;
@@ -112,7 +124,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.22;
-      text-align: center;
+      text-align: start;
 
       color: #ffffff;
     }
@@ -120,13 +132,16 @@
       @extend .button;
       background-color: $text-white;
       color: $bg-btn-pimary;
-      height: 45px;
+      height: auto;
       border-top-left-radius: 20px;
       padding: 11px 31px 12px 32px;
-      margin-top: 30px;
+      margin-top: auto;
       margin-left: 77px;
       // border: none;
     }
+  }
+
+  @media screen and (max-width: 1260px) {
   }
   @media screen and (max-width: 992px) {
     &__request {
@@ -148,18 +163,24 @@
 
   @media screen and (max-width: 600px) {
     &__request {
-      height: 300px;
+          padding: 51px 76px 40px;
+      flex-direction: column;
+      // height: auto;
       display: flex;
       align-items: center;
+      margin-bottom: 10px;
 
       &__subtitle {
         text-align: center;
       }
       &__btn {
-        height: 65px;
+        display: inline-block;
+        // height: 65px;
+        margin: 0 auto;
+        margin-top: 15px;
       }
       &__text {
-        margin: auto;
+        text-align: left;
       }
     }
   }
