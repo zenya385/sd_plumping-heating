@@ -179,20 +179,8 @@
     margin-top: 43px;
     z-index: 10;
     width: 311px;
-    left: 313px;
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: -10px;
-    //   left: calc(50% - 10px);
-    //   border-top: 10px solid transparent;
-    //   border-bottom: 10px solid #044b7f;
-    //   border-left: 10px solid transparent;
-    //   border-right: 10px solid transparent;
-    //   transition: border 0.4s;
-    //   z-index: 10;
-    //   // overflow: hidden;
-    // }
+    left: 72px;
+
     & a {
       font-family: "Raleway";
       font-style: normal;
@@ -236,9 +224,9 @@
     height: 43px;
     padding: 12px 23px;
   }
-  & .menu-open {
-    display: none;
-  }
+  // & .menu-open {
+  //   display: none;
+  // }
  @media screen and (max-width: 1260px) {
    .header-nav {
   display: grid; 
@@ -254,6 +242,8 @@
   }
   & .header-btn{
       grid-area: 1 / 2 / 2 / 3;
+      width: 192px;
+    justify-self: end;
   }
    } 
   }
