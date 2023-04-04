@@ -1762,12 +1762,14 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .sd_b11__wrap ::after {
+  .sd_b11__wrap::after {
     display: none;
   }
   .sd_b11 .current-menu-item::after {
     bottom: -20px;
     z-index: 10;
+    width: 10px;
+    text-align: center;
   }
 }
 
@@ -1878,13 +1880,27 @@ main {
   }
   .sd_b12__wrap__form {
     margin-left: 0;
+    margin-bottom: 50px;
   }
   .sd_b12__wrap__form__user {
     width: 90%;
-    margin: auto;
   }
   .sd_b12__wrap__info {
     border: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sd_b12 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sd_b12__wrap__form__user {
+    width: 100%;
+    margin: auto;
+    white-space: nowrap;
   }
 }
 
@@ -1936,7 +1952,8 @@ main {
   padding-left: 55px;
   padding-top: 61px;
   padding-bottom: 34px;
-  background-color: #212121;
+  background-image: url(../src/img/footer-bg.png);
+  background-size: 100% 100%;
 }
 .footer__nav .logoBox {
   width: 25%;

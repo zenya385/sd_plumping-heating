@@ -99,9 +99,10 @@
       flex-direction: column-reverse;
       &__form {
         margin-left: 0;
-        &__user{
-              width: 90%;
-    margin: auto;
+        margin-bottom: 50px;
+        &__user {
+          width: 90%;
+          // margin: auto;
         }
         & button {
           // margin: auto;
@@ -110,6 +111,32 @@
       }
       &__info {
         border: none;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__nav {
+    }
+    &__wrap {
+      &__form {
+        &__user {
+          width: 100%;
+          margin: auto;
+          white-space: nowrap;
+        }
+        & button {
+          // margin: auto;
+          // margin-bottom: auto;
+        }
+      }
+      &__info {
+        // border: none;
       }
     }
   }
