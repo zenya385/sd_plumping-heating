@@ -1,5 +1,5 @@
 .sd_b4 {
-@extend .container;
+  @extend .container;
   padding-top: 100px;
   padding-right: 104px;
   padding-bottom: 61px;
@@ -44,9 +44,9 @@
     }
     &__link {
       color: $link;
-      }
     }
-  
+  }
+
   &__subtitle {
     margin-bottom: 14px;
     font-family: "Catamaran";
@@ -93,29 +93,57 @@
     padding-right: 65px;
   }
 
-  & .current-menu-item::after{
- bottom: -20px; 
-}
+  & .current-menu-item::after {
+    bottom: -20px;
+  }
   @media screen and (max-width: 992px) {
-
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 50px;
     text-align: center;
 
-    &__subtitle {
-      text-align: center;
+    &__wrap {
+      display: none;
+    
+
+    
+      &__title{
+        margin-bottom: 25px;
+      }
+      &__subtitle {
+        text-align: center;
+      }
+      &__subtext {
+        text-align: center;
+      }
+      &__wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      &__btn {
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
     }
-    &__subtext {
-      text-align: center;
-    }
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-    &__btn {
+    &__select {
       margin: 0 auto;
-      margin-bottom: 20px;
-    }
+      display: flex;
+      border-radius: 10px;
+      border: none;
+      width: 230px;
+      padding: 10px;
+      text-align: center;
+      background: none;
+      margin-bottom: 30px;
+      //  background-position: right 10px center;
+      //  background: rgba(227,2,43,.11);
+      //  color: #e3022b;
+      &:hover {
+        border-color: #eeeeee;
+      }
+       }
   }
+}
+select {
+  display: none;
 }

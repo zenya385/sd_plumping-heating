@@ -71,27 +71,28 @@ main {
           flex: 1;
 }
 
-.container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list {
+.container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list, .header .header-nav, .header .header-contact {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  min-width: 320px;
-  max-width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 @media screen and (max-width: 1260px) {
-  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list {
-    width: 1260px;
+  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list, .header .header-nav, .header .header-contact {
+    max-width: 1260px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media screen and (max-width: 992px) {
-  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list {
-    width: 992px;
+  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list, .header .header-nav, .header .header-contact {
+    max-width: 992px;
   }
 }
 @media screen and (max-width: 600px) {
-  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list {
-    width: 600px;
+  .container, .sd_b12, .sd_b9, .sd_b8, .service3, .sd_b6, .sd_b5__list, .sd_b4, .sd_b3, .sd_b2, .service2, .header .nav-list, .header .header-nav, .header .header-contact {
+    max-width: 600px;
   }
 }
 
@@ -241,6 +242,7 @@ main {
           flex: 0 0 auto;
 }
 .header .header-contact__link {
+  min-width: 295px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +266,6 @@ main {
   .header .header-contact__list li:nth-child(1) {
     width: 100%;
     grid-area: 1/1/3/2;
-    margin-left: 20px;
   }
   .header .header-contact__list li:nth-child(2) {
     grid-area: 2/2/1/2;
@@ -274,6 +275,36 @@ main {
   }
   .header .header-contact__icon {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .header-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .header-contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    min-width: none;
+  }
+  .header .header-contact__list li:nth-child(1) {
+    width: 100%;
+  }
+  .header .header-contact__list li:nth-child(2) {
+    width: 100%;
+    text-transform: none;
+  }
+  .header .header-contact__list li:nth-child(3) {
+    width: 100%;
   }
 }
 .header .header-nav {
@@ -456,6 +487,7 @@ main {
     grid-area: 1/2/2/3;
     width: 192px;
     justify-self: end;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 992px) {
@@ -487,24 +519,6 @@ main {
 @media screen and (max-width: 992px) and (max-width: 600px) {
   .header .menu-open {
     padding: 0 16px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header .header-contact__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  .header .header-contact__item {
-    text-align: center;
   }
 }
 
@@ -921,13 +935,19 @@ main {
     padding-top: 50px;
     text-align: center;
   }
-  .sd_b4__subtitle {
+  .sd_b4__wrap {
+    display: none;
+  }
+  .sd_b4__wrap__title {
+    margin-bottom: 25px;
+  }
+  .sd_b4__wrap__subtitle {
     text-align: center;
   }
-  .sd_b4__subtext {
+  .sd_b4__wrap__subtext {
     text-align: center;
   }
-  .sd_b4__wrapper {
+  .sd_b4__wrap__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -936,10 +956,30 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
-  .sd_b4__btn {
+  .sd_b4__wrap__btn {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .sd_b4__select {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    width: 230px;
+    padding: 10px;
+    text-align: center;
+    background: none;
+    margin-bottom: 30px;
+  }
+  .sd_b4__select:hover {
+    border-color: #eeeeee;
+  }
+}
+
+select {
+  display: none;
 }
 
 .sd_b5 {
@@ -1699,7 +1739,7 @@ main {
   text-align: center;
   margin-bottom: 112px;
 }
-.sd_b11 .container, .sd_b11 .sd_b12, .sd_b11 .header .nav-list, .header .sd_b11 .nav-list, .sd_b11 .sd_b2, .sd_b11 .service2, .sd_b11 .sd_b3, .sd_b11 .sd_b4, .sd_b11 .sd_b5__list, .sd_b11 .sd_b6, .sd_b11 .sd_b8, .sd_b11 .service3, .sd_b11 .sd_b9 {
+.sd_b11 .container, .sd_b11 .sd_b12, .sd_b11 .header .header-contact, .header .sd_b11 .header-contact, .sd_b11 .header .header-nav, .header .sd_b11 .header-nav, .sd_b11 .header .nav-list, .header .sd_b11 .nav-list, .sd_b11 .sd_b2, .sd_b11 .service2, .sd_b11 .sd_b3, .sd_b11 .sd_b4, .sd_b11 .sd_b5__list, .sd_b11 .sd_b6, .sd_b11 .sd_b8, .sd_b11 .service3, .sd_b11 .sd_b9 {
   width: 100%;
 }
 .sd_b11 .accordion-content {
@@ -1751,20 +1791,33 @@ main {
 }
 @media screen and (max-width: 992px) {
   .sd_b11__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .sd_b11__wrap::after {
     display: none;
   }
-  .sd_b11 .current-menu-item::after {
-    bottom: -20px;
-    z-index: 10;
-    width: 10px;
+  .sd_b11__select {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    width: 230px;
+    padding: 10px;
     text-align: center;
+    background: none;
   }
+  .sd_b11__select:hover {
+    border-color: #eeeeee;
+  }
+  .sd_b11__select option {
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+  }
+}
+
+select {
+  display: none;
 }
 
 .sd_b12 {
@@ -2545,7 +2598,7 @@ body {
   color: #666666;
 }
 
-.menu .container, .menu .header .nav-list, .header .menu .nav-list, .menu .sd_b2, .menu .sd_b3, .menu .sd_b4, .menu .sd_b5__list, .menu .sd_b6, .menu .sd_b8, .menu .sd_b9, .menu .sd_b12, .menu .service2, .menu .service3 {
+.menu .container, .menu .header .header-contact, .header .menu .header-contact, .menu .header .header-nav, .header .menu .header-nav, .menu .header .nav-list, .header .menu .nav-list, .menu .sd_b2, .menu .sd_b3, .menu .sd_b4, .menu .sd_b5__list, .menu .sd_b6, .menu .sd_b8, .menu .sd_b9, .menu .sd_b12, .menu .service2, .menu .service3 {
   min-width: 320px;
   max-width: 1600px;
   padding-left: 15px;
@@ -2559,7 +2612,7 @@ body {
           box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-.menu-container .container, .menu-container .header .nav-list, .header .menu-container .nav-list, .menu-container .sd_b2, .menu-container .sd_b3, .menu-container .sd_b4, .menu-container .sd_b5__list, .menu-container .sd_b6, .menu-container .sd_b8, .menu-container .sd_b9, .menu-container .sd_b12, .menu-container .service2, .menu-container .service3 {
+.menu-container .container, .menu-container .header .header-contact, .header .menu-container .header-contact, .menu-container .header .header-nav, .header .menu-container .header-nav, .menu-container .header .nav-list, .header .menu-container .nav-list, .menu-container .sd_b2, .menu-container .sd_b3, .menu-container .sd_b4, .menu-container .sd_b5__list, .menu-container .sd_b6, .menu-container .sd_b8, .menu-container .sd_b9, .menu-container .sd_b12, .menu-container .service2, .menu-container .service3 {
   min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2611,6 +2664,7 @@ body {
   border: none;
   border-radius: 50%;
   outline: none;
+  font-size: 29px;
 }
 
 .menu-toggle:hover,
@@ -2635,7 +2689,7 @@ body {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.menu-container .is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }

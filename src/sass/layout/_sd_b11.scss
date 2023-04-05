@@ -61,19 +61,40 @@
     }
   }
 
+  
  @media screen and (max-width: 992px) {
 
    &__wrap{
-     flex-direction: column;
-      &::after{
-         display: none;
-       }
-      }
-      & .current-menu-item::after{
- bottom: -20px;
- z-index: 10; 
- width:10px ;
- text-align: center;
-      }
- }
+    display: none;
+  }
+ 
+ &__select{
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  width: 230px;
+  padding: 10px;
+  text-align: center;
+  background: none;
+  //  background-position: right 10px center;
+  //  background: rgba(227,2,43,.11);
+  //  color: #e3022b;
+  &:hover{
+    border-color: #eeeeee;
+  }
+   
+  
+  & option{
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+border: none;
+  
+  }
 }
+} 
+}
+ select{
+  display: none;
+  }
