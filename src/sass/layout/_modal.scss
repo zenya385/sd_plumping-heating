@@ -1,15 +1,16 @@
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  color: #212121;
-  background-color: #fff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.16;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: $text-nav-manu;
 }
 
-.container {
+.menu .container {
   min-width: 320px;
-  max-width: 1170px;
+  max-width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -21,7 +22,7 @@ body {
     0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-.page-header .container {
+.menu-container .container {
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -37,7 +38,7 @@ body {
 
 @media (max-width: 990px) {
   .menu {
-    display: none;
+    // display: none;
   }
 }
 
@@ -70,7 +71,7 @@ body {
 
 @media (max-width: 991px) {
   .menu-toggle {
-    display: none;
+    // display: none;
   }
 }
 
@@ -83,31 +84,32 @@ body {
   position: fixed;
   top: 0;
   left: 0;
- width: 100vw;
+  width: 100vw;
   height: 100vh;
   padding: 32px;
   background-color: #ffffff;
-  z-index: 999;
+  z-index: 99;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  transform: translateX(25%);
+  transform: translateX(0%);
 }
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 30px;
+  left: 80%;
+  color: #666;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-top: 40px;
 }
 
 .mobile-menu .link {
@@ -117,126 +119,141 @@ body {
   text-decoration: none;
 }
 
-.mob-menu__item a, .mob-contact a{
-font-family: "Raleway";
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: .015em;
-    text-transform: capitalize;
-    color: #666;
-
-  
-  
+.mob-menu__item a,
+.mob-contact a .menu a {
+  // font-family: "Raleway";
+  // font-weight: 600;
+  // font-size: 23px;
+  // line-height: 1.16;
+  // letter-spacing: 0.015em;
+  // text-transform: capitalize;
+  // color: #666;
 }
-
+.mod-contact a {
+  font-size: 18px;
+  color: red;
+}
 
 // ===================================================
 
+.nav-menu {
+  // width: 13%;
+  height: 42px;
+  display: flex;
+  // justify-content: center;
+  align-items: flex-start;
 
-  .nav-menu {
-    width: 13%;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  &:hover .toggle {
+    color: $accent-color;
+  }
+}
 
-    &:hover .toggle {
-      color: $accent-color;
-    }
-  }
+.nav-menu .menu {
+  display: grid;
+  grid-template-rows: 40px max-content;
+  gap: 10px;
+}
+.toggle {
+  all: unset;
+  background-color: transparent;
+  // color: $text-nav-manu;
+  width: 105px;
+  padding: 10px 10px 10px 10px;
+  font-weight: 600;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.toggle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform: rotate(45deg);
+  transition: 0.4s;
+  position: absolute;
+  top: 35%;
+  left: 88%;
+}
 
-  .nav-menu.menu {
-    display: grid;
-    grid-template-rows: 40px max-content;
-    gap: 10px;
-  }
-  .toggle {
-    all: unset;
-    background-color: transparent;
-    color: $text-nav-manu;
-    width: 95px;
-    padding: 10px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-  }
-  .toggle::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    transform: rotate(45deg);
-    transition: 0.4s;
-    position: absolute;
-    top: 36%;
-    left: 85%;
-  }
+.list {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px 4px rgba(167, 174, 186, 0.12);
+  border-radius: 4px;
+  color: #444;
+  display: grid;
+  grid-template-rows: repeat(7, 48px);
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+  margin-top: 43px;
+  z-index: 10;
+  width: 311px;
+  left: 72px;
 
-  .list {
-    position: absolute;
-    background: #ffffff;
-    box-shadow: 0px 24px 32px 4px rgba(167, 174, 186, 0.12);
-    border-radius: 4px;
-    color: #444;
-    display: grid;
-    grid-template-rows: repeat(7, 48px);
-    overflow: hidden;
-    height: 0;
-    transition: 0.4s;
-    margin-top: 43px;
-    z-index: 10;
-    width: 311px;
-    left: 72px;
+  & a {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #292a24;
+  }
+}
 
-    & a {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      color: #292a24;
-    }
-  }
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 29px;
+  transition: 0.4s, transform 0.4s var(--delay);
+  transform: translateX(-100%);
+  user-select: none;
+  cursor: pointer;
+}
+.list-item:hover {
+  background-color: rgba(15, 68, 133, 0.13);
+}
+.list-item:hover a {
+  color: #0f4485;
+}
 
-  .list-item {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 0 29px;
-    transition: 0.4s, transform 0.4s var(--delay);
-    transform: translateX(-100%);
-    user-select: none;
-    cursor: pointer;
-  }
-  .list-item:hover {
-    background-color: rgba(15, 68, 133, 0.13);
-  }
-  .list-item:hover a {
-    color: #0f4485;
-  }
+.toggle:focus::after {
+  transform: rotate(225deg);
+}
 
-  .toggle:focus::after {
-    transform: rotate(225deg);
-  }
+.toggle:focus ~ .list {
+  height: 337px;
+}
 
-  .toggle:focus ~ .list {
-    height: 337px;
-  }
+.toggle:focus ~ .list .list-item {
+  transform: translateX(0);
+}
 
-  .toggle:focus ~ .list .list-item {
-    transform: translateX(0);
-  }
+.header-btn {
+  height: 43px;
+  padding: 12px 23px;
+}
+// & .menu-open {
+//   display: none;
+// }
 
-  & .header-btn {
-    height: 43px;
-    padding: 12px 23px;
-  }
-  // & .menu-open {
-  //   display: none;
-  // }
+.mob-contact {
+  width: 310px;
+margin-left: -10px;
+font-size: 18px;
+margin-top: 25px;
+margin-bottom: 25px;
+& li{
+  margin-bottom: 8px;
+}
+& svg{
+  display: none;
+}
+}

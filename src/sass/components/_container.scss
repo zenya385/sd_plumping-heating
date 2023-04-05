@@ -1,20 +1,28 @@
 .container{
-  width: 100%;
-  padding-left: 4%;
-  padding-right: 4%;
+  // width: 100%;
+  // padding-left: 4%;
+  // padding-right: 4%;
   margin-right: auto;
   margin-left: auto;
+  // .container {
+  min-width: 320px;
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
  @media screen and (max-width: 1260px) {
-   max-width: 1260px;
-  padding-left: 25px;
-  padding-right: 25px;
+   width: 1260px;
+  // padding-left: 25px;
+  // padding-right: 25px;
   }
  @media screen and (max-width: 992px) {
-   max-width: 992px;
+   width: 992px;
   }
   @media screen and (max-width: 600px) {
-    max-width: 600px;
+    width: 600px;
 
   }
 }

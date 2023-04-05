@@ -1,11 +1,12 @@
 .sd_b11 {
+  // @extend .container;
   height: 100%;
   margin-top: 146px;
   // padding-left: 190px;
   // padding-right: 190px;
   text-align: center;
   margin-bottom: 112px;
-  &__container {
+  & .container {
     width: 100%;
   }
   & .accordion-content {
