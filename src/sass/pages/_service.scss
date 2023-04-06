@@ -1,5 +1,9 @@
 .service1 {
-  @extend .slider__title !optional;
+  & .slider__item {
+    background-image: none;
+    padding-top: 30px;
+      z-index: 10;
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,33 +13,27 @@
       rgba(15, 68, 133, 0.3021) 86.04%
     ),
     url(../src/img/hero1.jpg);
-
-  padding-top: 70px;
-
-  &__title {
-    @extend .slider__title !optional;
-  }
-  &__text {
-    @extend .slider__text !optional;
-  }
-  &__btn {
-    @extend .slider__btn !optional;
-  }
+  z-index: 10;
 
   @media screen and (max-width: 992px) {
-    padding-top: 70px;
+    padding-top: 30px;
   }
   @media screen and (max-width: 600px) {
     padding-top: 30px;
-    &__item {
-      &__title {
-        font-size: 37px;
-        line-height: 1.05;
-      }
-      &__text {
-        font-size: 17px;
-        line-height: 1.15;
-      }
+
+    & .slider__item {
+      padding-top: 30px;
+    }
+
+    & .slider__item__title {
+      font-size: 32px;
+      line-height: 1.05;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    & .slider__item__text {
+      font-size: 17px;
+      line-height: 1.15;
     }
   }
 }
@@ -218,6 +216,7 @@
 .service7 {
   @extend .container !optional;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding: 76px 0 50px 72px;
   margin: 0 55px;
@@ -227,6 +226,11 @@
   background-size: cover;
   & div {
     margin-right: 173px;
+  }
+  @media screen and (max-width: 1260px) {
+    & div {
+      justify-content: end;
+    }
   }
   @media screen and (max-width: 600px) {
     justify-content: center;
