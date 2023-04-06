@@ -163,12 +163,13 @@
 
   @media screen and (max-width: 600px) {
     &__request {
-          padding: 51px 76px 40px;
+      padding: 51px 10px 40px;
       flex-direction: column;
       // height: auto;
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      margin-top: 30px;
 
       &__subtitle {
         text-align: center;

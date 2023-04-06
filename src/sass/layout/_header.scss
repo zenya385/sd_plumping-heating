@@ -112,7 +112,10 @@
     padding-bottom: 18px;
     // padding: 16px  18px;
     // justify-content: space-between;
-    // flex: 3;
+    // flex: 3;,
+    @media screen and (max-width: 1260px) {
+      padding-bottom: 26px;
+    }
   }
 
   .nav-list {

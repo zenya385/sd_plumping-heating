@@ -1,5 +1,5 @@
 .slider__item {
-  // @extend .container;
+  @extend .container !optional;
   position: relative;
   height: 580px;
   padding-top: 164px;
