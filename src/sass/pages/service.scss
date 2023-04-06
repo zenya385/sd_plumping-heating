@@ -123,7 +123,6 @@
   }
 }
 .service6 {
-  // @extend .container;
   text-align: center;
   // margin: 0 55px;
   padding-left: 105px;
@@ -199,7 +198,8 @@
     color: #585858;
   }
   @media screen and (max-width: 992px) {
-    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &__list {
       display: flex;
@@ -223,6 +223,14 @@
   & div {
     margin-right: 173px;
   }
+  @media screen and (max-width: 600px) {
+     & div {
+    margin: 0 ;
+  }
+  justify-content: center;
+// padding: 15px 25px;
+  }
+
 }
 .service8 {
   text-align: center;

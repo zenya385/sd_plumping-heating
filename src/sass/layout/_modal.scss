@@ -95,8 +95,8 @@ body {
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container .is-open {
-  transform: translateX(10%);
+.menu-container.is-open {
+  transform: translateX(0%);
 }
 
 .menu-container .menu-toggle {
@@ -121,14 +121,15 @@ body {
 }
 
 .mob-menu__item a,
-.mob-contact a .menu a {
-  // font-family: "Raleway";
-  // font-weight: 600;
-  // font-size: 23px;
-  // line-height: 1.16;
-  // letter-spacing: 0.015em;
-  // text-transform: capitalize;
-  // color: #666;
+.mob-contact a,
+ .menu a {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.16;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: #666;
 }
 .mod-contact a {
   font-size: 18px;
