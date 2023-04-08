@@ -50,51 +50,73 @@
       background: #eeeeee;
       border-radius: 41px;
     }
-      & .current-menu-item::after{
- bottom: -20px;
- z-index: 10; 
-}
+    & .current-menu-item::after {
+      bottom: -20px;
+      z-index: 10;
+    }
     &__link {
       color: $link;
-      
-
     }
   }
 
-  
- @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1260px) {
+    &__wrap {
+      display: none;
+    }
+    & .dropdown {
+      // @extend .dropdown;
+      // width: 100%;
+      // height: 100vh;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      & .select {
+        margin: 0 auto;
+        width: 350px;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 6px;
 
-   &__wrap{
-    display: none;
+        font-family: "Catamaran";
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.4;
+        letter-spacing: 0.015em;
+      }
+      & .select-fild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & svg {
+          margin-left: 5px;
+        }
+      }
+      & .select-list {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      & .options {
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $bg-frame-primary;
+        }
+      }
+
+      & .hide {
+        visibility: hidden;
+        height: 0;
+      }
+      & .rotate {
+        transform: rotate(180deg);
+      }
+    }
   }
- 
- &__select{
-  margin: 0 auto;
-  display: flex;
-  border-radius: 10px;
-  border: none;
-  width: 230px;
-  padding: 10px;
-  text-align: center;
-  background: none;
-  //  background-position: right 10px center;
-  //  background: rgba(227,2,43,.11);
-  //  color: #e3022b;
-  &:hover{
-    border-color: #eeeeee;
-  }
-   
-  
-  & option{
-    width: 300px;
-    border-radius: 30px;
-    text-align: center;
-border: none;
-  
+  @media screen and (max-width: 992px) {
   }
 }
-} 
-}
- select{
-  display: none;
-  }

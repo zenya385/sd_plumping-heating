@@ -212,5 +212,14 @@
 
     <symbol id="icon-menu" viewBox="0 0 48 32"><path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
 </symbol>
+
+<symbol id="icon-arrow-down" viewBox="0 0 32 32">
+<path d="M16 23.219l-11.609-11.609 1.885-1.885 9.724 9.724 9.724-9.724 1.885 1.885-11.609 11.609z"></path>
+</symbol>
+
+<symbol id="icon-arrow-up" viewBox="0 0 32 32">
+<path d="M16 8.781l-11.609 11.609 1.885 1.885 9.724-9.724 9.724 9.724 1.885-1.885-11.609-11.609z"></path>
+</symbol>
+
   </defs>
 </svg>
