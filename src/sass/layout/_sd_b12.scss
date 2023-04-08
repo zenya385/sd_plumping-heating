@@ -18,6 +18,7 @@
         margin-bottom: 29px;
       }
     }
+
     &__form {
       margin-left: 67px;
 
@@ -79,6 +80,63 @@
       }
     }
   }
+  &__info {
+    &__list {
+      margin-bottom: 35px;
+      &__item {
+        padding: 6px;
+        &:hover a {
+          color: $accent-color;
+        }
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          word-wrap: break-word;
+          width: initial;
+          height: initial;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+
+          color: #000000;
+          svg {
+            margin-right: 18px;
+          }
+        }
+      }
+    }
+  }
+  &__social {
+    &__list {
+      display: flex;
+      &__icon {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 6px;
+        &:hover {
+          background-color: $accent-color-icon;
+        }
+        & a {
+          display: inline-block;
+          // width: initial;
+          height: 22px;
+        }
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
 
   @media screen and (max-width: 992px) {
     margin: 0 30px 45px 30px;
@@ -118,43 +176,6 @@
       &__info {
         padding-right: 15px;
       }
-    }
-  }
-}
-
-.sd_b12__info__list {
-  margin-bottom: 35px;
-
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 22px;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      word-wrap: break-word;
-
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-
-      color: #000000;
-      svg {
-        margin-right: 18px;
-      }
-    }
-  }
-}
-
-.sd_b12__social__list {
-  display: flex;
-  &__icon {
-    padding: 6px;
-    &:not(:last-child) {
-      margin-right: 12px;
     }
   }
 }

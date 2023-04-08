@@ -7,13 +7,74 @@
     url(../src/img/home-hero.jpg);
 
   // backdrop-filter: url(../src/img/home-hero.jpg), blur(1.5px);
-& .sd_b3__text{
-  @extend .font-text;
-text-align: left;
-}
+  & .sd_b3__text {
+    @extend .font-text;
+    text-align: left;
+  }
 }
 
-.about2 {}
-.about3 {}
-.about4 {}
-.about5 {}
+// .about2 {}
+// .about3 {}
+.about4 {
+  @extend .container;
+  text-align: center;
+  padding-left: 97px;
+  padding-right: 96px;
+
+
+
+  &__title {
+    margin-bottom: 78px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    &__item {
+      @extend .font-text;
+      width: 33.3%;
+      padding: 0 14px;
+
+      &:not(:last-child) {
+        border-right: 2px solid #d2d2d2;
+      }
+      &__number {
+        font-weight: 600;
+        font-size: 47px;
+        line-height: 57px;
+        color: $icon-primary;
+        margin-bottom: 14px;
+      }
+      &__text {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.71;
+  
+        color: $text-secondary;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__list {
+      flex-direction: column;
+      &__item {
+        width: 100%;
+        margin: 20px auto;
+
+        &:not(:last-child) {
+          border: none;
+        }
+  
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 40px 15px 0 15px ;
+  }
+}
+
+.about5 {
+  margin-bottom: 105px;
+
+  @media screen and (max-width: 992px) {
+  }
+}
