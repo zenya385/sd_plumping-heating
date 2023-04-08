@@ -15,9 +15,6 @@
       : "enableBodyScroll";
     bodyScrollLock[scrollLockMethod](document.body);
   };
-  // const toggleSubMenu = () => {
-  //   openSubMenuBtn.style.height = "380px"; //*
-  // }
 
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
