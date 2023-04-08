@@ -217,7 +217,7 @@
 .list-item {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0 29px;
   transition: 0.4s, transform 0.4s var(--delay);
   transform: translateX(-100%);

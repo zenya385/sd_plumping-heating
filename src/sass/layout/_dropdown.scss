@@ -23,6 +23,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
       & svg {
         margin-left: 5px;
       }
@@ -38,9 +39,15 @@
       padding: 15px;
       border-radius: 20px;
       cursor: pointer;
+      & a {
+        color: $text-title;
+      }
 
       &:hover {
-        background-color: $bg-frame-primary;
+        // background-color: $bg-frame-primary;
+        & a {
+          color: $accent-color;
+        }
       }
     }
 

@@ -423,15 +423,25 @@
         <a href="#" class="sd_b11__wrap__link">Boiler Installation</a>
         <a href="#" class="sd_b11__wrap__link">Boiler Repairs</a>
       </div>
-        <div>
-          <select class="sd_b4__select" name="" id="">
-            <option class="option" value="boiler servicing"><a href="#" class="sd_b11__wrap__link current-menu-item">Boiler
-                Servicing</a></option>
-            <option class="option" value="boiler installation"><a href="#" class="sd_b11__wrap__link">Boiler Installation</a>
-            </option>
-            <option class="option" value="boiler repairs"><a href="#" class="sd_b11__wrap__link">Boiler Repairs</a></option>
-          </select>
+      <div class=" dropdown">
+        <div class="select">
+          <div class="select-fild">
+            <p class="select-text">select services</p>
+            <svg class="arrow-icon" width="18" height="18">
+              <use href="./img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <ul class="select-list hide">
+            <li class="options">
+              <a href="#">Boiler Installation</a>
+            <li class="options">
+              <a href="#">Boiler Repair</a>
+            <li class="options">
+              <a href="#" class="">Boiler Services</a>
+            </li>
+          </ul>
         </div>
+      </div>
       <div class="container">
 
         <div class="accordion">
@@ -661,6 +671,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
+  <script src="js/select.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider-b7.js"></script>
   <script src="js/accordion-b9.js"></script>

@@ -186,39 +186,29 @@
     }
   }
   &__rights {
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    // height: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: $bg-footer-secondary;
 
-    // display: inline-block;
-    display: flex;
-    font-weight: normal;
-    // align-items: center;
-    // justify-content: start;
-    padding-left: 35px;
 
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.015em;
-    text-align: center;
 
     color: #8a8a8a;
     &__text1 {
       text-align: left;
-      // width: 50%;
-      // margin-right: 185px;
-      // word-wrap: break-word;
+       flex-basis: 50%;
+
     }
     &__text2 {
-      // align-self: center;
-      // justify-self: center;
-      // word-wrap: break-word;
-      text-align: center;
-      // width: 50%;
+       flex-basis: 50%;
     }
     @media screen and (max-width: 992px) {
       display: flex;
