@@ -2205,7 +2205,7 @@ img {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 .footer__nav .wrapSitemap__title {
   color: #a5a5a5;

@@ -52,7 +52,7 @@
     }
     & .footerImg {
       display: flex;
-      align-items: end;
+      align-items: flex-end;
     }
     & .wrapSitemap {
       @extend .font-link;
@@ -71,7 +71,7 @@
       }
     }
     & .wrapServices {
-       @extend .font-link;
+      @extend .font-link;
       // @extend .wrapSitemap;
       &__title {
         margin-bottom: 15px;
@@ -150,7 +150,6 @@
       }
       & .wrapServices {
         grid-area: 2 / 1 / 2 / 2;
-   
       }
     }
     @media screen and (max-width: 600px) {
@@ -195,7 +194,6 @@
     padding-bottom: 16px;
     background-color: $bg-footer-secondary;
 
-
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 14px;
@@ -205,11 +203,10 @@
     color: #8a8a8a;
     &__text1 {
       text-align: left;
-       flex-basis: 50%;
-
+      flex-basis: 50%;
     }
     &__text2 {
-       flex-basis: 50%;
+      flex-basis: 50%;
     }
     @media screen and (max-width: 992px) {
       display: flex;
