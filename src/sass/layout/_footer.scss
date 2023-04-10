@@ -71,7 +71,8 @@
       }
     }
     & .wrapServices {
-      @extend .wrapSitemap;
+       @extend .font-link;
+      // @extend .wrapSitemap;
       &__title {
         margin-bottom: 15px;
       }
@@ -148,8 +149,8 @@
         grid-area: 1 / 2 / 2 / 3;
       }
       & .wrapServices {
-        grid-area: 2 / 1 / 2 / 3;
-        // 2/1/2/3
+        grid-area: 2 / 1 / 2 / 2;
+   
       }
     }
     @media screen and (max-width: 600px) {
