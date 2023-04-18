@@ -223,11 +223,12 @@
       </div>
       <h2 class="sd_b4__title">Our <span style="color:#0F4485">Boiler</span> Services</h2>
       <div class="sd_b4__wrap">
-        <a href="#" class="sd_b4__wrap__link current-menu-item">Boiler Servicing</a>
-        <a href="#" class="sd_b4__wrap__link">Boiler Installation</a>
-        <a href="#" class="sd_b4__wrap__link">Boiler Repairs</a>
+        <a href="#boilerService" class="sd_b4__wrap__link" onclick="openTab(event, 'boilerService')">Boiler
+          Servicing</a>
+        <a href="#boilerInstallation" class="sd_b4__wrap__link" onclick="openTab(event, 'boilerInstallation')">Boiler
+          Installation</a>
+        <a href="#boilerRepairs" class="sd_b4__wrap__link" onclick="openTab(event, 'boilerRepairs')">Boiler Repairs</a>
       </div>
-
 
       <div class=" dropdown">
         <div class="select">
@@ -239,21 +240,23 @@
           </div>
           <ul class="select-list hide">
             <li class="options">
-              <a href="#">Boiler Installation</a>
+              <a href="#boilerInstallation" onclick="openTab(event, 'boilerInstallation')">Boiler Installation</a>
             <li class="options">
-              <a href="#">Boiler Repair</a>
+              <a href="#boilerRepairs" onclick="openTab(event, 'boilerRepairs')">Boiler
+                Repair</a>
             <li class="options">
-              <a href="#" class="">Boiler Services</a>
+              <a href="#boilerService" onclick="openTab(event, 'boilerService')">Boiler
+                Services</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="sd_b4__wrapper">
+      <div id="boilerService" class="sd_b4__wrapper">
         <div class="sd_b4__service">
-          <h3 id="boilerServise" class="sd_b4__subtitle">Boiler Servicing</h3>
+          <h3 class="sd_b4__subtitle">Boiler Servicing</h3>
           <p class="sd_b4__text">We do a visual inspection of the boiler in your home. This will reveal any initial
-            defects that can be seen visually.</p>
-          <p class="sd_b4__text">We perform a visual inspection of the boiler in your home. This will allow us to make
+            defects that can be seen visually. <br>
+            br We perform a visual inspection of the boiler in your home. This will allow us to make
             sure that your boiler meets safety
             standards.
           </p>
@@ -262,12 +265,60 @@
             <li class="sd_b4__item">Check the boiler's connections and piping</li>
             <li class="sd_b4__item">Check the gas flow rate</li>
             <li class="sd_b4__item">Check the gas flow rate</li>
-            <li class="sd_b4__item">Check the operating pressure that equates through the boiler and the gas meter</li>
+            <li class="sd_b4__item">Check the operating pressure that equates through the boiler and the gas meter
+            </li>
           </ul>
           <button type="button" class="sd_b4__btn">Learn more</button>
         </div>
         <img src="img/sd_b4-1.png" width="527" height="402" alt="master">
+
       </div>
+
+      <div id="boilerInstallation" class="sd_b4__wrapper">
+        <div class="sd_b4__service">
+          <h3 class="sd_b4__subtitle">Boiler Installation</h3>
+          <p class="sd_b4__text">We do a visual inspection of the boiler in your home. This will reveal any initial
+            defects that can be seen visually. <br>
+            br We perform a visual inspection of the boiler in your home. This will allow us to make
+            sure that your boiler meets safety
+            standards.
+          </p>
+          <ul class="sd_b4__list">
+            <li class="sd_b4__item">Test your boiler to make sure it starts properly</li>
+            <li class="sd_b4__item">Check the boiler's connections and piping</li>
+            <li class="sd_b4__item">Check the gas flow rate</li>
+            <li class="sd_b4__item">Check the gas flow rate</li>
+            <li class="sd_b4__item">Check the operating pressure that equates through the boiler and the gas meter
+            </li>
+          </ul>
+          <button type="button" class="sd_b4__btn">Learn more</button>
+        </div>
+        <img src="img/sd_b10-2.png" width="527" height="402" alt="master">
+
+      </div>
+
+      <div id="boilerRepairs" class="sd_b4__wrapper">
+        <div class="sd_b4__service">
+          <h3 class="sd_b4__subtitle">Boiler Repairs</h3>
+          <p class="sd_b4__text">We do a visual inspection of the boiler in your home. This will reveal any initial
+            defects that can be seen visually. <br>
+            br We perform a visual inspection of the boiler in your home. This will allow us to make
+            sure that your boiler meets safety
+            standards.
+          </p>
+          <ul class="sd_b4__list">
+            <li class="sd_b4__item">Test your boiler to make sure it starts properly</li>
+            <li class="sd_b4__item">Check the boiler's connections and piping</li>
+            <li class="sd_b4__item">Check the gas flow rate</li>
+            <li class="sd_b4__item">Check the gas flow rate</li>
+            <li class="sd_b4__item">Check the operating pressure that equates through the boiler and the gas meter
+            </li>
+          </ul>
+          <button type="button" class="sd_b4__btn">Learn more</button>
+        </div>
+        <img src="img/sd_b10-1.png" width="527" height="402" alt="master">
+      </div>
+
     </section>
     <section class="sd_b5">
       <div class="sd_b5__frame">
@@ -603,9 +654,12 @@
       <h2 class="sd_b11__title">You've got <span style="color:#0F4485"> questions</span>? We've got<span
           style="color:#0F4485"> answers</span>!</h2>
       <div class="sd_b11__wrap">
-        <a href="#" class="sd_b11__wrap__link current-menu-item">Boiler Servicing</a>
-        <a href="#" class="sd_b11__wrap__link">Boiler Installation</a>
-        <a href="#" class="sd_b11__wrap__link">Boiler Repairs</a>
+        <a href="#accordion1" class="sd_b11__wrap__link" onclick="openTabAccordion(event, 'accordion1')">Boiler
+          Servicing</a>
+        <a href="#accordion2" class="sd_b11__wrap__link" onclick="openTabAccordion(event, 'accordion2')">Boiler
+          Installation</a>
+        <a href="#accordion3" class="sd_b11__wrap__link" onclick="openTabAccordion(event, 'accordion3')">Boiler
+          Repairs</a>
       </div>
 
       <div class=" dropdown">
@@ -618,11 +672,11 @@
           </div>
           <ul class="select-list hide">
             <li class="options">
-              <a href="#">Boiler Installation</a>
+              <a href="#accordion2" onclick="openTabAccordion(event, 'accordion2')">Boiler Installation</a>
             <li class="options">
-              <a href="#">Boiler Repair</a>
+              <a href="#accordion3" onclick="openTabAccordion(event, 'accordion3')">Boiler Repair</a>
             <li class="options">
-              <a href="#" class="">Boiler Services</a>
+              <a href="#accordion1" onclick="openTabAccordion(event, 'accordion1')">Boiler Services</a>
             </li>
           </ul>
         </div>
@@ -630,10 +684,110 @@
 
       <div class="container">
 
-        <div class="accordion">
+        <div id="accordion1" class="accordion">
           <div class="accordion-item">
             <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Local
                 Experts</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Our certified gas-safe Edinburgh plumbers are qualified to carry out any repair, maintenance or
+                installation of plumbing
+                and heating equipment in your home, company or community. We have the best professional plumbers
+                specialised in the
+                unblocking of all types of pipes or faucets, repairing of boilers, replacement and repair of electric
+                heaters and
+                stopping of water leakages.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Ann Affordable
+                Services</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Decades Of
+                Experience</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Our Methods</span><span
+                class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+
+        </div>
+        <div id="accordion2" class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Local
+                Experts Installation</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Our certified gas-safe Edinburgh plumbers are qualified to carry out any repair, maintenance or
+                installation of plumbing
+                and heating equipment in your home, company or community. We have the best professional plumbers
+                specialised in the
+                unblocking of all types of pipes or faucets, repairing of boilers, replacement and repair of electric
+                heaters and
+                stopping of water leakages.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Ann Affordable
+                Services</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Decades Of
+                Experience</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Our Methods</span><span
+                class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+              </p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+
+        </div>
+        <div id="accordion3" class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Local
+                Experts Repair</span><span class="icon" aria-hidden="true"></span></button>
             <div class="accordion-content">
               <p>Our certified gas-safe Edinburgh plumbers are qualified to carry out any repair, maintenance or
                 installation of plumbing
@@ -957,6 +1111,10 @@
   <script src="js/slider-b7.js"></script>
   <script src="js/select.js"></script>
   <script src="js/accordion-b9.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/tab-accordion.js"></script>
+
+  <!-- <script src="js/subMenu.js"></script> -->
   <script defer src="js/mobile-menu.js"></script>
 </body>
 

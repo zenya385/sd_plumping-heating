@@ -923,6 +923,12 @@ img {
   }
 }
 
+#boilerService,
+#boilerInstallation,
+#boilerRepairs {
+  scroll-margin-top: 300px;
+}
+
 .sd_b4 {
   padding-top: 100px;
   padding-right: 104px;
@@ -994,6 +1000,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.sd_b4__wrapper:not(:first-of-type) {
+  display: none;
 }
 .sd_b4__item {
   margin-bottom: 13px;
@@ -1897,12 +1906,21 @@ img {
   }
 }
 
+#accordion1,
+#accordion2,
+#accordion3 {
+  scroll-margin-top: 280px;
+}
+
 .sd_b11 {
   height: 100%;
   text-align: center;
 }
 .sd_b11 .container, .sd_b11 .about4, .sd_b11 .service7, .sd_b11 .service3, .sd_b11 .sd_b12, .sd_b11 .header .header-contact, .header .sd_b11 .header-contact, .sd_b11 .header .header-nav, .header .sd_b11 .header-nav, .sd_b11 .header .nav-list, .header .sd_b11 .nav-list, .sd_b11 .slider__item, .sd_b11 .sd_b2, .sd_b11 .service2, .sd_b11 .sd_b3, .sd_b11 .sd_b4, .sd_b11 .sd_b5__list, .sd_b11 .sd_b6, .sd_b11 .sd_b8, .sd_b11 .sd_b9, .sd_b11 .sd_b11 {
   width: 100%;
+}
+.sd_b11 .accordion:not(:first-of-type) {
+  display: none;
 }
 .sd_b11 .accordion-content {
   text-align: left;

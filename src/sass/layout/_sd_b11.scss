@@ -1,3 +1,8 @@
+#accordion1,
+#accordion2,
+#accordion3 {
+  scroll-margin-top: 280px;
+}
 .sd_b11 {
   @extend .container;
   height: 100%;
@@ -8,6 +13,9 @@
   // margin-bottom: 112px;
   & .container {
     width: 100%;
+  }
+  & .accordion:not(:first-of-type) {
+    display: none;
   }
   & .accordion-content {
     text-align: left;
